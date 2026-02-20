@@ -1,6 +1,7 @@
 "use client";
 
-import { ExternalLink, Shirt } from "lucide-react";
+import Image from "next/image";
+import { ExternalLink } from "lucide-react";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
@@ -11,10 +12,12 @@ const PRODUCTS = [
   {
     name: "KXSS Limited Edition Hoodie",
     type: "Hoodie",
+    image: "/images/kxss-hoodie.webp",
   },
   {
     name: "KXSS Sweatpants",
     type: "Sweatpants",
+    image: "/images/kxss-sweatpants.webp",
   },
 ];
 
@@ -45,14 +48,13 @@ export default function ShopContent() {
         <Container>
           <FadeInOnScroll>
             <div className="grid lg:grid-cols-2 gap-8 items-center">
-              {/* Image placeholder */}
-              <div className="aspect-[4/3] rounded-lg bg-surface-elevated border border-border flex items-center justify-center">
-                <div className="text-center">
-                  <Shirt size={48} className="text-gold/30 mx-auto mb-3" />
-                  <p className="text-2xl font-bold text-text-muted/30">
-                    KXSS
-                  </p>
-                </div>
+              <div className="aspect-[4/3] rounded-lg bg-surface-elevated border border-border overflow-hidden relative">
+                <Image
+                  src="/images/kxss-hoodie.webp"
+                  alt="KXSS Limited Edition Hoodie"
+                  fill
+                  className="object-cover"
+                />
               </div>
 
               {/* Content */}
@@ -107,8 +109,13 @@ export default function ShopContent() {
                   rel="noopener noreferrer"
                   className="group block"
                 >
-                  <div className="aspect-square rounded-lg bg-surface-elevated border border-border flex items-center justify-center mb-4 group-hover:border-gold/30 transition-colors">
-                    <Shirt size={48} className="text-gold/20" />
+                  <div className="aspect-square rounded-lg bg-surface-elevated border border-border overflow-hidden relative mb-4 group-hover:border-gold/30 transition-colors">
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
                   <h3 className="font-semibold text-text-primary group-hover:text-gold transition-colors">
                     {product.name}
