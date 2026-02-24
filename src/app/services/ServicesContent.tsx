@@ -9,7 +9,7 @@ import CTABanner from "@/components/sections/CTABanner";
 const SERVICES = [
   {
     icon: Bot,
-    name: "Stay Starving Systems",
+    name: "Luxcor AI",
     tagline: "AI Automation & Consulting",
     description:
       "Custom AI automation solutions built on the WAT Framework — Workflows, Agents, Tools. We architect systems where AI handles reasoning and deterministic code handles execution. The result: reliable automation that actually works in production.",
@@ -21,6 +21,7 @@ const SERVICES = [
       "Monthly retainer support & monitoring",
     ],
     cta: "Book a Discovery Call",
+    href: "https://luxcorai.vercel.app/",
   },
   {
     icon: Home,
@@ -87,9 +88,20 @@ export default function ServicesContent() {
                     </p>
                   </div>
                 )}
-                <Button href="/contact">
-                  {service.cta} <ArrowRight size={16} className="ml-2" />
-                </Button>
+                {"href" in service ? (
+                  <a
+                    href={service.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 bg-gold text-black font-semibold rounded hover:bg-gold-light transition-colors"
+                  >
+                    {service.cta} <ArrowRight size={16} className="ml-2" />
+                  </a>
+                ) : (
+                  <Button href="/contact">
+                    {service.cta} <ArrowRight size={16} className="ml-2" />
+                  </Button>
+                )}
               </FadeInOnScroll>
 
               <FadeInOnScroll delay={0.2}>

@@ -51,15 +51,16 @@ export const DIVISIONS = [
     ],
   },
   {
-    name: "Stay Starving Systems",
-    slug: "stay-starving-systems",
+    name: "Luxcor AI",
+    slug: "luxcor-ai",
     tagline: "AI automation. SaaS. The intelligence layer.",
     description:
       "Custom AI automation solutions for businesses. Voice agents, workflow automation, and intelligent systems that replace manual work with scalable infrastructure.",
     longDescription:
-      "Stay Starving Systems is where engineering meets entrepreneurship. We build and deploy custom AI automation solutions — from voice agents that qualify leads 24/7 to workflow automation that eliminates hours of manual work. Using our proprietary WAT Framework (Workflows, Agents, Tools), we architect systems where AI handles reasoning and deterministic code handles execution. The result: reliable automation that actually works in production.",
+      "Luxcor AI is where engineering meets entrepreneurship. We build and deploy custom AI automation solutions — from voice agents that qualify leads 24/7 to workflow automation that eliminates hours of manual work. Using our proprietary WAT Framework (Workflows, Agents, Tools), we architect systems where AI handles reasoning and deterministic code handles execution. The result: reliable automation that actually works in production.",
     category: "technology",
     icon: "Bot",
+    externalUrl: "https://luxcorai.vercel.app/",
     features: [
       "Custom AI agent development",
       "Voice agent setup & deployment",
@@ -273,7 +274,7 @@ export const MILESTONES = [
   { year: "2022", title: "Florida Realtor", description: "Licensed as a Florida Realtor at 22" },
   { year: "2024", title: "First Property", description: "Purchased first investment property at 25 — C6 Properties founded" },
   { year: "2025", title: "Holdings LLC", description: "Stay Starving Holdings LLC established in Wyoming" },
-  { year: "2025", title: "AI Systems", description: "Built the WAT Framework — AI automation division launched" },
+  { year: "2025", title: "Luxcor AI", description: "Built the WAT Framework — Luxcor AI automation division launched" },
   { year: "2026", title: "The Boardroom", description: "C-Suite School launched — education arm goes live" },
   { year: "2030", title: "$50M Vision", description: "Target: $50M+ diversified holdings with 100+ global team" },
 ] as const;

@@ -59,38 +59,61 @@ export default function PortfolioContent() {
 
           {/* Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filtered.map((div) => (
-              <Card
-                key={div.slug}
-                href={`/portfolio/${div.slug}`}
-                className="group h-full flex flex-col"
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <div className="p-3 rounded-lg bg-gold/10">
-                    <DivisionIcon
-                      name={div.icon}
-                      size={28}
-                      className="text-gold"
-                    />
+            {filtered.map((div) => {
+              const isExternal = "externalUrl" in div;
+              const cardContent = (
+                <>
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="p-3 rounded-lg bg-gold/10">
+                      <DivisionIcon
+                        name={div.icon}
+                        size={28}
+                        className="text-gold"
+                      />
+                    </div>
+                    <Badge variant="gold">
+                      {div.category.replace("_", " ")}
+                    </Badge>
                   </div>
-                  <Badge variant="gold">
-                    {div.category.replace("_", " ")}
-                  </Badge>
-                </div>
-                <h3 className="text-xl font-bold text-text-primary mb-2">
-                  {div.name}
-                </h3>
-                <p className="text-sm text-text-muted leading-relaxed mb-2">
-                  {div.tagline}
-                </p>
-                <p className="text-sm text-text-secondary leading-relaxed flex-1">
-                  {div.description}
-                </p>
-                <div className="mt-6 flex items-center text-sm font-medium text-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                  View Division <ArrowRight size={14} className="ml-1" />
-                </div>
-              </Card>
-            ))}
+                  <h3 className="text-xl font-bold text-text-primary mb-2">
+                    {div.name}
+                  </h3>
+                  <p className="text-sm text-text-muted leading-relaxed mb-2">
+                    {div.tagline}
+                  </p>
+                  <p className="text-sm text-text-secondary leading-relaxed flex-1">
+                    {div.description}
+                  </p>
+                  <div className="mt-6 flex items-center text-sm font-medium text-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                    View Division <ArrowRight size={14} className="ml-1" />
+                  </div>
+                </>
+              );
+
+              if (isExternal) {
+                return (
+                  <a
+                    key={div.slug}
+                    href={div.externalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block rounded-lg border border-border bg-surface-elevated p-6 transition-all duration-300 hover:border-gold/50 hover:glow-gold group h-full flex flex-col"
+                  >
+                    {cardContent}
+                  </a>
+                );
+              }
+
+              return (
+                <Card
+                  key={div.slug}
+                  href={`/portfolio/${div.slug}`}
+                  className="group h-full flex flex-col"
+                >
+                  {cardContent}
+                </Card>
+              );
+            })}
           </div>
         </Container>
       </section>
