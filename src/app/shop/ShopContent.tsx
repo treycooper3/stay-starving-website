@@ -35,9 +35,9 @@ export default function ShopContent() {
               Wear the Brand
             </h1>
             <p className="text-lg text-text-secondary max-w-2xl">
-              KXSS — a collaboration between KayphoriaX and Stay Starving.
+              KXSS, a collaboration between KayphoriaX and Stay Starving.
               Streetwear that speaks to the hustle. When you wear it, you&apos;re
-              not just wearing clothes — you&apos;re wearing a statement.
+              not just wearing clothes. You&apos;re wearing a statement.
             </p>
           </FadeInOnScroll>
         </Container>
@@ -69,7 +69,7 @@ export default function ShopContent() {
                 <p className="text-text-secondary leading-relaxed mb-6">
                   KXSS merges KayphoriaX&apos;s bold design language with Stay
                   Starving&apos;s relentless identity. Premium hoodies and
-                  sweatpants — every piece represents the mindset. Limited drops.
+                  sweatpants. Every piece represents the mindset. Limited drops.
                   No restocks. When it&apos;s gone, it&apos;s gone.
                 </p>
 

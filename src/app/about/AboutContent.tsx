@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Shield, Zap, BarChart3, Repeat, Flame } from "lucide-react";
+import { Shield, Zap, BarChart3, Repeat, Flame, Server } from "lucide-react";
 import Container from "@/components/layout/Container";
 import FadeInOnScroll from "@/components/animations/FadeInOnScroll";
 import StaggerChildren, { StaggerItem } from "@/components/animations/StaggerChildren";
@@ -25,7 +25,7 @@ const PRINCIPLES = [
     icon: BarChart3,
     title: "Measure Everything",
     description:
-      "If it's not tracked, it's not managed. CAC, LTV, conversion rates — single source of truth for every decision.",
+      "If it's not tracked, it's not managed. CAC, LTV, conversion rates. Single source of truth for every decision.",
   },
   {
     icon: Shield,
@@ -37,7 +37,13 @@ const PRINCIPLES = [
     icon: Flame,
     title: "Stay Starving",
     description:
-      "When you're starving, you eat. By any means. Complacency is the enemy. The hunger never stops — it just finds new tables.",
+      "When you're starving, you eat. By any means. Complacency is the enemy. The hunger never stops. It just finds new tables.",
+  },
+  {
+    icon: Server,
+    title: "Own the Infrastructure",
+    description:
+      "Don't rent your distribution. Own your audience, your tools, your data, your platforms. Dependencies are liabilities. Build on ground you control.",
   },
 ];
 
@@ -58,7 +64,7 @@ export default function AboutContent() {
             <p className="text-lg text-text-secondary leading-relaxed">
               Founded by {BRAND.founder}, Stay Starving Holdings is a
               diversified holding company that builds financial freedom through
-              architected systems — not by working harder, but by building
+              architected systems, not by working harder, but by building
               infrastructure that compounds.
             </p>
           </FadeInOnScroll>
@@ -89,7 +95,7 @@ export default function AboutContent() {
                 <p className="text-sm text-gold mb-6">{BRAND.founderTitle}</p>
                 <div className="space-y-4 text-text-secondary leading-relaxed">
                   <p>
-                    Mechanical engineer by training — Bachelor of Science in
+                    Mechanical engineer by training. Bachelor of Science in
                     Mechanical Engineering with a concentration in Aerospace from
                     North Carolina A&amp;T State University, and a Master of
                     Science in Management from the University of Florida. Not a
@@ -105,15 +111,15 @@ export default function AboutContent() {
                   <p>
                     Trey believes in building lanes and connecting them into a
                     highway. Every division of Stay Starving Holdings feeds into
-                    the next — content creates attention, attention creates
+                    the next. Content creates attention, attention creates
                     revenue, revenue creates capital, capital creates assets.
                   </p>
                   <p>
                     The goal isn&apos;t to work in nine businesses. It&apos;s to
-                    architect nine systems that work together — and eventually
+                    architect nine systems that work together, and eventually
                     work without him. When you&apos;re starving, you find a way
                     to eat. That hunger doesn&apos;t go away when you&apos;re
-                    full — it just finds the next table.
+                    full. It just finds the next table.
                   </p>
                 </div>
               </div>

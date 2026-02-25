@@ -14,7 +14,7 @@ interface CTABannerProps {
 
 export default function CTABanner({
   heading = "Become an Executive",
-  subtext = "Join The Boardroom — where operators build wealth through AI, real estate, and investing. No fluff. No theory. Just systems.",
+  subtext = "Join The Boardroom. Where operators build wealth through AI, real estate, and investing. No fluff. No theory. Just systems.",
   buttonText = "Join The Boardroom",
   buttonHref = SKOOL_URL,
 }: CTABannerProps) {

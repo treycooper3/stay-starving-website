@@ -65,7 +65,7 @@ export default function ContactContent() {
             </h1>
             <p className="text-lg text-text-secondary">
               Whether you&apos;re looking for AI automation, real estate services,
-              membership, or a partnership — we&apos;re listening.
+              membership, or a partnership, we&apos;re listening.
             </p>
           </FadeInOnScroll>
         </Container>

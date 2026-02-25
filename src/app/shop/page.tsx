@@ -4,7 +4,7 @@ import ShopContent from "./ShopContent";
 export const metadata: Metadata = {
   title: "Shop",
   description:
-    "Stay Starving apparel — KXSS streetwear, LEVITY lifestyle, and Opulent Sky premium collections.",
+    "Stay Starving apparel. KXSS streetwear, LEVITY lifestyle, and Opulent Sky premium collections.",
 };
 
 export default function ShopPage() {

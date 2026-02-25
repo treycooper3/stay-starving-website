@@ -13,12 +13,12 @@ const PLACEHOLDER_VIDEOS = [
     thumbnail: null,
   },
   {
-    title: "The WAT Framework — AI Automation That Actually Works",
+    title: "The WAT Framework: AI Automation That Actually Works",
     category: "AI Systems",
     thumbnail: null,
   },
   {
-    title: "From Duplex to Portfolio — My Airbnb Strategy",
+    title: "From Duplex to Portfolio: My Airbnb Strategy",
     category: "Real Estate",
     thumbnail: null,
   },

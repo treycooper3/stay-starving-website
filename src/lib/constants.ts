@@ -21,9 +21,10 @@ export const DIVISIONS = [
     description:
       "Short-term rental operations and real estate portfolio management. Building wealth through strategic property acquisitions, Airbnb optimization, and scalable property systems.",
     longDescription:
-      "C6 Properties is the real estate arm of Stay Starving Holdings. We operate a portfolio of short-term rental properties optimized for maximum cash flow through dynamic pricing, automated guest communication, and smart home technology. Our approach combines traditional real estate fundamentals with modern automation — from AI-powered pricing algorithms to fully automated guest experiences. Every property is a system, not just an asset.",
+      "C6 Properties is the real estate arm of Stay Starving Holdings. We operate a portfolio of short-term rental properties optimized for maximum cash flow through dynamic pricing, automated guest communication, and smart home technology. Our approach combines traditional real estate fundamentals with modern automation, from AI-powered pricing algorithms to fully automated guest experiences. Every property is a system, not just an asset.",
     category: "real_estate",
     icon: "Building2",
+    externalUrl: "https://airbnb.com/h/melbournebeachstay",
     features: [
       "Short-term rental portfolio management",
       "Dynamic pricing optimization",
@@ -37,9 +38,9 @@ export const DIVISIONS = [
     slug: "stay-starving-media",
     tagline: "YouTube. Content. Distribution.",
     description:
-      "Multi-platform content distribution engine. YouTube long-form, Shorts, LinkedIn, email — building an audience that converts into every monetization layer.",
+      "Multi-platform content distribution engine. YouTube long-form, Shorts, LinkedIn, email.building an audience that converts into every monetization layer.",
     longDescription:
-      "Stay Starving Media is the distribution engine of the entire ecosystem. Through YouTube long-form content, Shorts, LinkedIn thought leadership, and email newsletters, we build attention and convert it into revenue across every division. Our content pipeline is powered by AI automation — from transcription and caption generation to B-roll sourcing and video rendering. Content is the flywheel that drives everything.",
+      "Stay Starving Media is the distribution engine of the entire ecosystem. Through YouTube long-form content, Shorts, LinkedIn thought leadership, and email newsletters, we build attention and convert it into revenue across every division. Our content pipeline is powered by AI automation, from transcription and caption generation to B-roll sourcing and video rendering. Content is the flywheel that drives everything.",
     category: "media",
     icon: "Play",
     features: [
@@ -57,7 +58,7 @@ export const DIVISIONS = [
     description:
       "Custom AI automation solutions for businesses. Voice agents, workflow automation, and intelligent systems that replace manual work with scalable infrastructure.",
     longDescription:
-      "Luxcor AI is where engineering meets entrepreneurship. We build and deploy custom AI automation solutions — from voice agents that qualify leads 24/7 to workflow automation that eliminates hours of manual work. Using our proprietary WAT Framework (Workflows, Agents, Tools), we architect systems where AI handles reasoning and deterministic code handles execution. The result: reliable automation that actually works in production.",
+      "Luxcor AI is where engineering meets entrepreneurship. We build and deploy custom AI automation solutions, from voice agents that qualify leads 24/7 to workflow automation that eliminates hours of manual work. Using our proprietary WAT Framework (Workflows, Agents, Tools), we architect systems where AI handles reasoning and deterministic code handles execution. The result: reliable automation that actually works in production.",
     category: "technology",
     icon: "Bot",
     externalUrl: "https://luxcorai.vercel.app/",
@@ -76,7 +77,7 @@ export const DIVISIONS = [
     description:
       "Premium membership community for operators building wealth through AI, real estate, and investing. Three tracks, one mission: engineer freedom.",
     longDescription:
-      "The Boardroom is where executives are made. Our premium membership gives you access to three comprehensive course tracks — AI Systems, Real Estate, and Stock Market & Options — plus the Wealth Operating System bonus curriculum. Members earn corporate titles from Associate to C-Suite through engagement and results. This isn't a community of dreamers. It's a room full of operators building real wealth through real systems.",
+      "The Boardroom is where executives are made. Our premium membership gives you access to three comprehensive course tracks: AI Systems, Real Estate, and Stock Market & Options, plus the Wealth Operating System bonus curriculum. Members earn corporate titles from Associate to C-Suite through engagement and results. This isn't a community of dreamers. It's a room full of operators building real wealth through real systems.",
     category: "education",
     icon: "GraduationCap",
     features: [
@@ -90,19 +91,20 @@ export const DIVISIONS = [
   {
     name: "KayphoriaX",
     slug: "kayphoriax",
-    tagline: "Bold apparel. Unapologetic style.",
+    tagline: "High fashion. Body positivity. Creative self-expression.",
     description:
-      "KayphoriaX is the apparel brand behind the movement. KXSS — a collaboration between KayphoriaX and Stay Starving — delivers streetwear that speaks to the hustle.",
+      "KayphoriaX is a high fashion lingerie couture brand specializing in diversity-focused swimwear, apparel, accessories, and high fashion lingerie. Founded by Kayci (KAYPHORIA), a Tuskegee University graduate, the brand inspires confidence and creative self-expression.",
     longDescription:
-      "KayphoriaX is the apparel engine of the Stay Starving ecosystem. The brand's flagship collaboration, KXSS, merges KayphoriaX's bold design language with Stay Starving's relentless identity. Premium hoodies, sweatpants, and limited drops — every piece represents the mindset. When you wear it, you're not just wearing clothes. You're wearing a statement: you're hungry, and you're not done yet.",
+      "KayphoriaX is a high fashion lingerie couture brand built on the pillars of body positivity, creative self-expression, and empowerment. Founded by Kayci, known as KAYPHORIA, a Tuskegee University graduate in Pre-Vet and Animal Science who transitioned from content creation to building a fashion empire. The brand's mission is to inspire people around the world to have confidence in their bodies and themselves. KXSS, the collaboration between KayphoriaX and Stay Starving, merges bold couture design with relentless identity. Collections include HEART ABLAZE, GOOD VS. EVIL, DREAMLAND, and GARDEN.",
     category: "apparel",
     icon: "Shirt",
+    externalUrl: "https://kayphoriax.com",
     features: [
-      "KXSS — KayphoriaX x Stay Starving collaboration",
-      "Premium hoodies & sweatpants",
-      "Limited edition drops",
-      "Streetwear with a message",
-      "Brand collaborations",
+      "KXSS: KayphoriaX x Stay Starving collaboration",
+      "High fashion lingerie couture",
+      "Diversity-focused swimwear & apparel",
+      "Limited edition collection drops",
+      "Body positivity & empowerment brand",
     ],
   },
   {
@@ -112,9 +114,10 @@ export const DIVISIONS = [
     description:
       "Professional drone services for real estate listings, commercial properties, events, and anything that needs a view from above.",
     longDescription:
-      "Opulent Sky Solutions provides professional aerial photography and drone services, specializing in real estate. From stunning listing photos that sell homes faster to commercial property surveys and event coverage, we deliver sky-high perspectives that ground-level cameras can't match. Fully licensed and insured, Opulent Sky bridges the gap between real estate and technology — giving every property the premium visual treatment it deserves.",
+      "Opulent Sky Solutions provides professional aerial photography and drone services, specializing in real estate. From stunning listing photos that sell homes faster to commercial property surveys and event coverage, we deliver sky-high perspectives that ground-level cameras can't match. Fully licensed and insured, Opulent Sky bridges the gap between real estate and technology, giving every property the premium visual treatment it deserves.",
     category: "real_estate",
     icon: "Camera",
+    instagramUrl: "https://www.instagram.com/opulentskysolutions",
     features: [
       "Aerial real estate photography",
       "Commercial property surveys",
@@ -130,7 +133,7 @@ export const DIVISIONS = [
     description:
       "Strategic investments in creators, automation startups, and emerging opportunities aligned with the Stay Starving ecosystem.",
     longDescription:
-      "Stay Starving Ventures is the investment arm of the holding company. We deploy strategic capital into creators, automation-focused startups, and emerging opportunities that align with our ecosystem. Every investment strengthens the flywheel — whether it's backing a content creator who amplifies the brand, funding an AI startup that becomes a portfolio company, or seeding a real estate deal that adds to our property portfolio.",
+      "Stay Starving Ventures is the investment arm of the holding company. We deploy strategic capital into creators, automation-focused startups, and emerging opportunities that align with our ecosystem. Every investment strengthens the flywheel, whether it's backing a content creator who amplifies the brand, funding an AI startup that becomes a portfolio company, or seeding a real estate deal that adds to our property portfolio.",
     category: "investments",
     icon: "TrendingUp",
     features: [
@@ -164,17 +167,20 @@ export const DIVISIONS = [
     slug: "trey-cooper-realty",
     tagline: "Florida Realtor. Deal flow. Market access.",
     description:
-      "Licensed Florida Realtor services with a systems-first approach. Lead qualification, market analysis, and deal flow for buyers and investors.",
+      "Licensed Florida Realtor specializing in multifamily and commercial real estate. Systems-first approach with AI-powered lead qualification, market analysis, and deal flow for buyers and investors.",
     longDescription:
-      "Trey Cooper Realty provides licensed real estate agent services powered by technology. From AI-driven lead qualification to data-backed market analysis, we bring a systems-first approach to every transaction. Whether you're buying your first home, acquiring an investment property, or selling a portfolio asset, you get an agent who thinks like an investor and operates like an engineer.",
+      "Trey Cooper Realty provides licensed real estate agent services powered by technology. I specialize in multifamily and commercial. From AI-driven lead qualification to data-backed market analysis, we bring a systems-first approach to every transaction. Whether you're buying your first home, acquiring an investment property, or selling a portfolio asset, you get an agent who thinks like an investor and operates like an engineer.",
     category: "services",
     icon: "Home",
+    instagramUrl: "https://www.instagram.com/stayinvestedre",
+    brokerUrl: "https://www.itgrealty.com/trey-cooper/",
+    calendlyUrl: "https://calendly.com/treycooper333/onboarding-meeting",
     features: [
+      "Multifamily & commercial specialization",
       "Buyer & seller representation",
       "Investment property acquisition",
       "AI-powered lead qualification",
       "Market analysis & deal sourcing",
-      "Commission-based services",
     ],
   },
 ] as const;
@@ -206,7 +212,7 @@ export const COURSE_TRACKS = [
     name: "AI Systems",
     tagline: "Build systems that work without you.",
     description:
-      "Build, deploy, and sell AI automations — from your first bot to your first paying client.",
+      "Build, deploy, and sell AI automations.from your first bot to your first paying client.",
     icon: "Bot",
     modules: [
       "AI Automation Foundations",
@@ -218,7 +224,7 @@ export const COURSE_TRACKS = [
     name: "Real Estate",
     tagline: "Own assets. Build equity. Automate operations.",
     description:
-      "Build wealth through property — Airbnb, house hacking, rehabs, and agent strategies.",
+      "Build wealth through property.Airbnb, house hacking, rehabs, and agent strategies.",
     icon: "Building2",
     modules: [
       "Real Estate as a System",
@@ -246,13 +252,13 @@ export const GAMIFICATION_LEVELS = [
   { level: 3, name: "Director", points: 150, unlock: "Bonus resources & templates" },
   { level: 4, name: "VP", points: 300, unlock: "Monthly AMA recordings" },
   { level: 5, name: "Executive", points: 500, unlock: "1:1 strategy session (15 min)" },
-  { level: 6, name: "C-Suite", points: 1000, unlock: "Inner circle — direct access to Trey" },
+  { level: 6, name: "C-Suite", points: 1000, unlock: "Inner circle.direct access to Trey" },
 ] as const;
 
 export const MEMBERSHIP_PRICING = {
   monthly: { price: 29, interval: "month" as const, label: "$29/month" },
   annual: { price: 249, interval: "year" as const, label: "$249/year", savings: 99 },
-  founding: { price: 19, interval: "month" as const, label: "$19/month", note: "First 20 members — locked in for life" },
+  founding: { price: 19, interval: "month" as const, label: "$19/month", note: "First 20 members.locked in for life" },
 } as const;
 
 export const STATS = [
@@ -263,7 +269,7 @@ export const STATS = [
 ] as const;
 
 export const SOCIAL_LINKS = {
-  youtube: "https://www.youtube.com/@TreyCooper",
+  youtube: "https://www.youtube.com/@TreyCooper.",
   instagram: "https://www.instagram.com/staystarvingofficial/",
   twitter: "https://x.com/treythesavage3",
   discord: "https://discord.gg/684VAZaZ",
@@ -272,10 +278,10 @@ export const SOCIAL_LINKS = {
 export const MILESTONES = [
   { year: "2018", title: "Started Investing", description: "Began investing in stocks and crypto at 18 years old" },
   { year: "2022", title: "Florida Realtor", description: "Licensed as a Florida Realtor at 22" },
-  { year: "2024", title: "First Property", description: "Purchased first investment property at 25 — C6 Properties founded" },
+  { year: "2024", title: "First Property", description: "Purchased first investment property at 25. C6 Properties founded" },
   { year: "2025", title: "Holdings LLC", description: "Stay Starving Holdings LLC established in Wyoming" },
-  { year: "2025", title: "Luxcor AI", description: "Built the WAT Framework — Luxcor AI automation division launched" },
-  { year: "2026", title: "The Boardroom", description: "C-Suite School launched — education arm goes live" },
+  { year: "2025", title: "Luxcor AI", description: "Built the WAT Framework.Luxcor AI automation division launched" },
+  { year: "2026", title: "The Boardroom", description: "C-Suite School launched.education arm goes live" },
   { year: "2030", title: "$50M Vision", description: "Target: $50M+ diversified holdings with 100+ global team" },
 ] as const;
 

@@ -4,7 +4,7 @@ import AboutContent from "./AboutContent";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "The story behind Stay Starving Holdings — a diversified holding company engineering financial freedom through systems.",
+    "The story behind Stay Starving Holdings. A diversified holding company engineering financial freedom through systems.",
 };
 
 export default function AboutPage() {

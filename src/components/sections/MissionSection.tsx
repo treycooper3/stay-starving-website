@@ -10,7 +10,7 @@ export default function MissionSection() {
       <Container className="max-w-4xl text-center">
         <FadeInOnScroll>
           <p className="text-sm font-semibold uppercase tracking-widest text-gold mb-6">
-            {BRAND.legalName} &middot; {BRAND.state}
+            {BRAND.name}
           </p>
         </FadeInOnScroll>
         <FadeInOnScroll delay={0.1}>
@@ -23,7 +23,7 @@ export default function MissionSection() {
         <FadeInOnScroll delay={0.2}>
           <p className="text-lg text-text-secondary leading-relaxed max-w-2xl mx-auto">
             Nine divisions. One mission. Every piece of the ecosystem is designed
-            to compound — content creates attention, attention creates revenue,
+            to compound. Content creates attention, attention creates revenue,
             revenue creates capital, capital creates assets. The flywheel never
             stops.
           </p>

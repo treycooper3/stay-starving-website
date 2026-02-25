@@ -85,7 +85,7 @@ export default function BoardroomContent() {
               {
                 icon: <BookOpen size={24} className="text-gold" />,
                 title: "3 Course Tracks",
-                desc: "AI Systems, Real Estate, Stock Market & Options — 36+ lessons",
+                desc: "AI Systems, Real Estate, Stock Market & Options. 36+ lessons",
               },
               {
                 icon: <Star size={24} className="text-gold" />,

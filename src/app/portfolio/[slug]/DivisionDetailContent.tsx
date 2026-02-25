@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, Check } from "lucide-react";
+import { ArrowLeft, Check, ExternalLink, Instagram, Calendar, Globe } from "lucide-react";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
@@ -17,6 +17,10 @@ export default function DivisionDetailContent({
   division: Division;
 }) {
   const priceRange = "priceRange" in division ? (division as { priceRange: string }).priceRange : null;
+  const externalUrl = "externalUrl" in division ? (division as { externalUrl: string }).externalUrl : null;
+  const instagramUrl = "instagramUrl" in division ? (division as { instagramUrl: string }).instagramUrl : null;
+  const brokerUrl = "brokerUrl" in division ? (division as { brokerUrl: string }).brokerUrl : null;
+  const calendlyUrl = "calendlyUrl" in division ? (division as { calendlyUrl: string }).calendlyUrl : null;
 
   return (
     <>
@@ -90,6 +94,58 @@ export default function DivisionDetailContent({
               <div className="mt-8 p-6 rounded-lg border border-gold/20 bg-gold/5">
                 <p className="text-sm text-text-muted mb-1">Starting from</p>
                 <p className="text-2xl font-bold text-gold">{priceRange}</p>
+              </div>
+            </FadeInOnScroll>
+          )}
+
+          {/* Links Section */}
+          {(externalUrl || instagramUrl || brokerUrl || calendlyUrl) && (
+            <FadeInOnScroll delay={0.3}>
+              <div className="mt-8 flex flex-wrap gap-3">
+                {externalUrl && (
+                  <a
+                    href={externalUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-3 bg-gold text-black font-semibold rounded hover:bg-gold-light transition-colors"
+                  >
+                    <ExternalLink size={16} />
+                    Visit Website
+                  </a>
+                )}
+                {calendlyUrl && (
+                  <a
+                    href={calendlyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-3 bg-gold text-black font-semibold rounded hover:bg-gold-light transition-colors"
+                  >
+                    <Calendar size={16} />
+                    Book a Consultation
+                  </a>
+                )}
+                {instagramUrl && (
+                  <a
+                    href={instagramUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-3 border border-gold/30 text-gold font-semibold rounded hover:bg-gold/10 transition-colors"
+                  >
+                    <Instagram size={16} />
+                    Instagram
+                  </a>
+                )}
+                {brokerUrl && (
+                  <a
+                    href={brokerUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-3 border border-gold/30 text-gold font-semibold rounded hover:bg-gold/10 transition-colors"
+                  >
+                    <Globe size={16} />
+                    Broker Profile
+                  </a>
+                )}
               </div>
             </FadeInOnScroll>
           )}

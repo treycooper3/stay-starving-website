@@ -1,12 +1,35 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Youtube, Twitter, Instagram, MessageCircle } from "lucide-react";
+import { Youtube, Twitter, Instagram, MessageCircle, Check } from "lucide-react";
 import Container from "./Container";
 import { BRAND, DIVISIONS, NAV_LINKS, SOCIAL_LINKS } from "@/lib/constants";
 
 export default function Footer() {
+  const [nlStatus, setNlStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  async function handleNewsletterSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setNlStatus("loading");
+    const email = new FormData(e.currentTarget).get("email");
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (res.ok) {
+        setNlStatus("success");
+        e.currentTarget.reset();
+      } else {
+        setNlStatus("error");
+      }
+    } catch {
+      setNlStatus("error");
+    }
+  }
   return (
     <footer className="border-t border-border bg-surface">
       <Container className="py-16">
@@ -91,33 +114,45 @@ export default function Footer() {
               Join the inner circle. Weekly insights on AI, real estate, and
               building wealth through systems.
             </p>
-            <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="email"
-                placeholder="your@email.com"
-                className="flex-1 px-3 py-2 bg-surface-elevated border border-border rounded text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-gold transition-colors"
-              />
-              <button
-                type="submit"
-                className="px-4 py-2 bg-gold text-black text-sm font-semibold rounded hover:bg-gold-light transition-colors"
-              >
-                Join
-              </button>
-            </form>
+            {nlStatus === "success" ? (
+              <div className="flex items-center gap-2 text-gold text-sm">
+                <Check size={16} />
+                <span>You&apos;re subscribed!</span>
+              </div>
+            ) : (
+              <form className="flex gap-2" onSubmit={handleNewsletterSubmit}>
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="your@email.com"
+                  className="flex-1 px-3 py-2 bg-surface-elevated border border-border rounded text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-gold transition-colors"
+                  required
+                />
+                <button
+                  type="submit"
+                  disabled={nlStatus === "loading"}
+                  className="px-4 py-2 bg-gold text-black text-sm font-semibold rounded hover:bg-gold-light transition-colors disabled:opacity-50"
+                >
+                  {nlStatus === "loading" ? "..." : "Join"}
+                </button>
+              </form>
+            )}
+            {nlStatus === "error" && (
+              <p className="text-xs text-red-400 mt-2">Failed to subscribe. Try again.</p>
+            )}
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-text-muted">
-            &copy; {new Date().getFullYear()} {BRAND.legalName}. All rights
-            reserved.
+            &copy; 2023 {BRAND.legalName}. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <Link href="#" className="text-xs text-text-muted hover:text-text-secondary transition-colors">
+            <Link href="/privacy" className="text-xs text-text-muted hover:text-text-secondary transition-colors">
               Privacy Policy
             </Link>
-            <Link href="#" className="text-xs text-text-muted hover:text-text-secondary transition-colors">
+            <Link href="/terms" className="text-xs text-text-muted hover:text-text-secondary transition-colors">
               Terms of Service
             </Link>
           </div>

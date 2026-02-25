@@ -1,6 +1,6 @@
 "use client";
 
-import { Bot, Home, Check, ArrowRight } from "lucide-react";
+import { Bot, Home, Check, ArrowRight, Instagram, Globe } from "lucide-react";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
 import FadeInOnScroll from "@/components/animations/FadeInOnScroll";
@@ -12,7 +12,7 @@ const SERVICES = [
     name: "Luxcor AI",
     tagline: "AI Automation & Consulting",
     description:
-      "Custom AI automation solutions built on the WAT Framework — Workflows, Agents, Tools. We architect systems where AI handles reasoning and deterministic code handles execution. The result: reliable automation that actually works in production.",
+      "Custom AI automation solutions built on the WAT Framework: Workflows, Agents, Tools. We architect systems where AI handles reasoning and deterministic code handles execution. The result: reliable automation that actually works in production.",
     features: [
       "Custom AI agent development & deployment",
       "Voice agent setup (lead qualification, support, scheduling)",
@@ -26,18 +26,23 @@ const SERVICES = [
   {
     icon: Home,
     name: "Trey Cooper Realty",
-    tagline: "Licensed Florida Realtor",
+    tagline: "Licensed Florida Realtor | Multifamily & Commercial",
     description:
-      "Licensed agent services powered by technology. From AI-driven lead qualification to data-backed market analysis, we bring a systems-first approach to every real estate transaction.",
+      "I specialize in multifamily and commercial. Licensed agent services powered by technology. From AI-driven lead qualification to data-backed market analysis, we bring a systems-first approach to every real estate transaction.",
     features: [
+      "Multifamily & commercial specialization",
       "Buyer & seller representation",
       "Investment property acquisition & analysis",
-      "Market research & comp analysis",
       "AI-powered lead qualification",
       "Deal sourcing for investors",
     ],
     pricing: "Commission-based",
-    cta: "Schedule Consultation",
+    cta: "Book a Consultation",
+    href: "https://calendly.com/treycooper333/onboarding-meeting",
+    links: [
+      { label: "Instagram", url: "https://www.instagram.com/stayinvestedre", icon: "instagram" },
+      { label: "Broker Profile", url: "https://www.itgrealty.com/trey-cooper/", icon: "globe" },
+    ],
   },
 ];
 
@@ -88,19 +93,29 @@ export default function ServicesContent() {
                     </p>
                   </div>
                 )}
-                {"href" in service ? (
-                  <a
-                    href={service.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center px-6 py-3 bg-gold text-black font-semibold rounded hover:bg-gold-light transition-colors"
-                  >
-                    {service.cta} <ArrowRight size={16} className="ml-2" />
-                  </a>
-                ) : (
-                  <Button href="/contact">
-                    {service.cta} <ArrowRight size={16} className="ml-2" />
-                  </Button>
+                <a
+                  href={service.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 bg-gold text-black font-semibold rounded hover:bg-gold-light transition-colors"
+                >
+                  {service.cta} <ArrowRight size={16} className="ml-2" />
+                </a>
+                {"links" in service && (
+                  <div className="flex flex-wrap gap-3 mt-4">
+                    {(service as { links: { label: string; url: string; icon: string }[] }).links.map((link) => (
+                      <a
+                        key={link.url}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 border border-gold/30 text-gold text-sm font-medium rounded hover:bg-gold/10 transition-colors"
+                      >
+                        {link.icon === "instagram" ? <Instagram size={14} /> : <Globe size={14} />}
+                        {link.label}
+                      </a>
+                    ))}
+                  </div>
                 )}
               </FadeInOnScroll>
 
