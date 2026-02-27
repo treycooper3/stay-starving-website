@@ -61,7 +61,7 @@ export const DIVISIONS = [
       "Luxcor AI is where engineering meets entrepreneurship. We build and deploy custom AI automation solutions, from voice agents that qualify leads 24/7 to workflow automation that eliminates hours of manual work. Using our proprietary WAT Framework (Workflows, Agents, Tools), we architect systems where AI handles reasoning and deterministic code handles execution. The result: reliable automation that actually works in production.",
     category: "technology",
     icon: "Bot",
-    externalUrl: "https://luxcorai.vercel.app/",
+    externalUrl: "https://luxcor.tech/",
     features: [
       "Custom AI agent development",
       "Voice agent setup & deployment",

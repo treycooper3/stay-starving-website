@@ -21,7 +21,7 @@ const SERVICES = [
       "Monthly retainer support & monitoring",
     ],
     cta: "Book a Discovery Call",
-    href: "https://luxcorai.vercel.app/",
+    href: "https://luxcor.tech/",
   },
   {
     icon: Home,
