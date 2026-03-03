@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS, SKOOL_URL } from "@/lib/constants";
 import Container from "./Container";
@@ -33,9 +34,9 @@ export default function Navbar() {
     <>
       <nav
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "bg-black/90 backdrop-blur-md border-b border-border"
+            ? "bg-black/80 backdrop-blur-xl border-b border-gold/10"
             : "bg-transparent"
         )}
       >
@@ -48,10 +49,9 @@ export default function Navbar() {
                 alt="Stay Starving"
                 width={40}
                 height={40}
-                className="rounded"
               />
-              <span className="text-lg font-bold tracking-tight text-text-primary">
-                STAY STARVING
+              <span className="font-serif text-sm font-semibold tracking-[0.15em] uppercase text-text-primary">
+                Stay Starving
               </span>
             </Link>
 
@@ -61,9 +61,10 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm font-medium text-text-secondary hover:text-gold transition-colors"
+                  className="relative text-sm font-medium text-text-secondary hover:text-text-primary transition-colors duration-300 py-1 group"
                 >
-                  {link.label}
+                  <span className="tracking-wide">{link.label}</span>
+                  <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gold origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-[cubic-bezier(0.65,0,0.35,1)]" />
                 </Link>
               ))}
             </div>
@@ -74,7 +75,7 @@ export default function Navbar() {
                 href={SKOOL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:inline-flex items-center px-5 py-2.5 bg-gold text-black text-sm font-semibold rounded hover:bg-gold-light transition-colors"
+                className="hidden sm:inline-flex items-center px-6 py-2.5 bg-gold text-black text-xs font-semibold uppercase tracking-[0.15em] hover:bg-gold-light transition-all duration-300 shadow-[0_2px_8px_rgba(212,168,67,0.2)]"
               >
                 Join The Boardroom
               </a>
@@ -91,31 +92,52 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Menu Overlay */}
-      {mobileOpen && (
-        <div className="fixed inset-0 z-40 bg-black/95 backdrop-blur-lg lg:hidden">
-          <div className="flex flex-col items-center justify-center h-full gap-8">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileOpen(false)}
-                className="text-2xl font-medium text-text-secondary hover:text-gold transition-colors"
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-40 bg-black/95 backdrop-blur-xl lg:hidden"
+          >
+            <div className="flex flex-col items-center justify-center h-full gap-8">
+              {NAV_LINKS.map((link, index) => (
+                <motion.div
+                  key={link.href}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.05, duration: 0.4 }}
+                >
+                  <Link
+                    href={link.href}
+                    onClick={() => setMobileOpen(false)}
+                    className="text-3xl font-serif font-light text-text-secondary hover:text-text-primary transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </motion.div>
+              ))}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: NAV_LINKS.length * 0.05, duration: 0.4 }}
               >
-                {link.label}
-              </Link>
-            ))}
-            <a
-              href={SKOOL_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setMobileOpen(false)}
-              className="mt-4 inline-flex items-center px-8 py-3 bg-gold text-black text-lg font-semibold rounded hover:bg-gold-light transition-colors"
-            >
-              Join The Boardroom
-            </a>
-          </div>
-        </div>
-      )}
+                <div className="w-12 h-[1px] bg-gold/30 mx-auto mb-6" />
+                <a
+                  href={SKOOL_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileOpen(false)}
+                  className="inline-flex items-center px-8 py-3 bg-gold text-black text-sm font-semibold uppercase tracking-[0.15em] hover:bg-gold-light transition-colors"
+                >
+                  Join The Boardroom
+                </a>
+              </motion.div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }

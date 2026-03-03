@@ -10,8 +10,8 @@ interface CardProps {
 
 export default function Card({ children, href, className, hover = true }: CardProps) {
   const classes = cn(
-    "rounded-lg border border-border bg-surface-elevated p-6 transition-all duration-300",
-    hover && "hover:border-gold/50 hover:glow-gold",
+    "border border-gold/[0.06] bg-surface-card p-8 transition-all duration-500",
+    hover && "hover:border-gold/20 hover:shadow-[0_4px_30px_rgba(212,168,67,0.06)]",
     className
   );
 

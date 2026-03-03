@@ -61,6 +61,9 @@ export default function AboutContent() {
               Stay Starving isn&apos;t a slogan.{" "}
               <span className="text-gradient-gold">It&apos;s an operating system.</span>
             </h1>
+            <p className="font-serif text-xl sm:text-2xl italic text-text-muted mb-6">
+              You don&apos;t manifest anything. You create it.
+            </p>
             <p className="text-lg text-text-secondary leading-relaxed">
               Founded by {BRAND.founder}, Stay Starving Holdings is a
               diversified holding company that builds financial freedom through
@@ -76,13 +79,13 @@ export default function AboutContent() {
         <Container>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <FadeInOnScroll>
-              <div className="aspect-square rounded-lg bg-surface-elevated border border-border flex items-center justify-center overflow-hidden">
+              <div className="rounded-lg bg-surface-elevated border border-border overflow-hidden">
                 <Image
-                  src="/logos/stay_starving_logo.png"
+                  src="/images/Aboutme.JPG"
                   alt={BRAND.founder}
-                  width={200}
-                  height={200}
-                  className="opacity-30"
+                  width={600}
+                  height={800}
+                  className="w-full h-auto"
                 />
               </div>
             </FadeInOnScroll>

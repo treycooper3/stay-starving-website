@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, Check } from "lucide-react";
+import { Mail } from "lucide-react";
 import FadeInOnScroll from "@/components/animations/FadeInOnScroll";
 import Container from "@/components/layout/Container";
 
@@ -34,24 +34,28 @@ export default function NewsletterSection() {
   }
 
   return (
-    <section className="py-24 sm:py-32">
+    <section className="py-32 sm:py-40">
       <Container className="max-w-2xl text-center">
         <FadeInOnScroll>
-          <div className="mx-auto w-14 h-14 rounded-full bg-gold/10 flex items-center justify-center mb-6">
-            <Mail size={24} className="text-gold" />
+          {/* Architectural icon container */}
+          <div className="relative w-14 h-14 border border-gold/15 bg-gradient-to-br from-gold/[0.06] to-transparent flex items-center justify-center mx-auto mb-8">
+            <span className="absolute top-0 left-0 w-3 h-[1px] bg-gold/40" />
+            <span className="absolute top-0 left-0 w-[1px] h-3 bg-gold/40" />
+            <Mail size={22} className="text-gold/80" />
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+
+          <h2 className="font-serif text-3xl sm:text-4xl font-light mb-4">
             Stay Starving. Stay Informed.
           </h2>
-          <p className="text-text-secondary mb-8">
+          <p className="text-text-secondary font-light mb-10">
             Weekly insights on AI automation, real estate deals, and building
             wealth through systems. No spam. Just signal.
           </p>
+
           {status === "success" ? (
-            <div className="flex items-center justify-center gap-2 text-gold">
-              <Check size={20} />
-              <span className="font-medium">You&apos;re in. Welcome to the inner circle.</span>
-            </div>
+            <p className="font-serif italic text-gold text-lg">
+              Welcome to the inner circle.
+            </p>
           ) : (
             <form
               className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
@@ -61,13 +65,13 @@ export default function NewsletterSection() {
                 name="email"
                 type="email"
                 placeholder="your@email.com"
-                className="flex-1 px-4 py-3 bg-surface-elevated border border-border rounded text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-gold transition-colors"
+                className="flex-1 px-4 py-3 bg-surface-card border border-gold/10 text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-gold/40 transition-colors"
                 required
               />
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="px-6 py-3 bg-gold text-black text-sm font-semibold rounded hover:bg-gold-light transition-colors whitespace-nowrap disabled:opacity-50"
+                className="px-6 py-3 bg-gold text-black text-xs font-semibold uppercase tracking-[0.15em] hover:bg-gold-light transition-colors whitespace-nowrap disabled:opacity-50 shadow-[0_2px_8px_rgba(212,168,67,0.2)]"
               >
                 {status === "loading" ? "Subscribing..." : "Subscribe"}
               </button>

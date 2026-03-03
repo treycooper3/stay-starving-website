@@ -30,8 +30,9 @@ export default function Footer() {
       setNlStatus("error");
     }
   }
+
   return (
-    <footer className="border-t border-border bg-surface">
+    <footer className="border-t border-gold/[0.06] bg-surface">
       <Container className="py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
@@ -42,34 +43,38 @@ export default function Footer() {
                 alt="Stay Starving"
                 width={32}
                 height={32}
-                className="rounded"
               />
-              <span className="font-bold tracking-tight text-text-primary">
-                STAY STARVING
+              <span className="font-serif text-sm font-semibold tracking-[0.15em] uppercase text-text-primary">
+                Stay Starving
               </span>
             </Link>
-            <p className="text-sm text-text-muted leading-relaxed mb-6">
+            <p className="text-sm text-text-muted font-light leading-relaxed mb-6">
               {BRAND.description}
             </p>
             <div className="flex gap-4">
-              <a href={SOCIAL_LINKS.youtube} target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-gold transition-colors" aria-label="YouTube">
-                <Youtube size={20} />
-              </a>
-              <a href={SOCIAL_LINKS.twitter} target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-gold transition-colors" aria-label="Twitter">
-                <Twitter size={20} />
-              </a>
-              <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-gold transition-colors" aria-label="Instagram">
-                <Instagram size={20} />
-              </a>
-              <a href={SOCIAL_LINKS.discord} target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-gold transition-colors" aria-label="Discord">
-                <MessageCircle size={20} />
-              </a>
+              {[
+                { href: SOCIAL_LINKS.youtube, icon: Youtube, label: "YouTube" },
+                { href: SOCIAL_LINKS.twitter, icon: Twitter, label: "Twitter" },
+                { href: SOCIAL_LINKS.instagram, icon: Instagram, label: "Instagram" },
+                { href: SOCIAL_LINKS.discord, icon: MessageCircle, label: "Discord" },
+              ].map(({ href, icon: Icon, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-text-muted hover:text-gold hover:scale-110 transition-all duration-300"
+                  aria-label={label}
+                >
+                  <Icon size={18} />
+                </a>
+              ))}
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-text-primary mb-4">
+            <h3 className="font-serif text-xs font-medium uppercase tracking-[0.2em] text-text-primary mb-5">
               Quick Links
             </h3>
             <ul className="space-y-3">
@@ -77,9 +82,10 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-text-muted hover:text-gold transition-colors"
+                    className="relative text-sm text-text-muted hover:text-text-secondary transition-colors duration-300 group inline-block"
                   >
                     {link.label}
+                    <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gold/40 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-400 ease-[cubic-bezier(0.65,0,0.35,1)]" />
                   </Link>
                 </li>
               ))}
@@ -88,7 +94,7 @@ export default function Footer() {
 
           {/* Divisions */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-text-primary mb-4">
+            <h3 className="font-serif text-xs font-medium uppercase tracking-[0.2em] text-text-primary mb-5">
               Our Divisions
             </h3>
             <ul className="space-y-3">
@@ -96,9 +102,10 @@ export default function Footer() {
                 <li key={div.slug}>
                   <Link
                     href={`/portfolio/${div.slug}`}
-                    className="text-sm text-text-muted hover:text-gold transition-colors"
+                    className="relative text-sm text-text-muted hover:text-text-secondary transition-colors duration-300 group inline-block"
                   >
                     {div.name}
+                    <span className="absolute bottom-0 left-0 w-full h-[1px] bg-gold/40 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-400 ease-[cubic-bezier(0.65,0,0.35,1)]" />
                   </Link>
                 </li>
               ))}
@@ -107,17 +114,17 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-text-primary mb-4">
+            <h3 className="font-serif text-xs font-medium uppercase tracking-[0.2em] text-text-primary mb-5">
               Stay Informed
             </h3>
-            <p className="text-sm text-text-muted mb-4">
+            <p className="text-sm text-text-muted font-light mb-4">
               Join the inner circle. Weekly insights on AI, real estate, and
               building wealth through systems.
             </p>
             {nlStatus === "success" ? (
               <div className="flex items-center gap-2 text-gold text-sm">
                 <Check size={16} />
-                <span>You&apos;re subscribed!</span>
+                <span className="font-serif italic">You&apos;re subscribed.</span>
               </div>
             ) : (
               <form className="flex gap-2" onSubmit={handleNewsletterSubmit}>
@@ -125,13 +132,13 @@ export default function Footer() {
                   name="email"
                   type="email"
                   placeholder="your@email.com"
-                  className="flex-1 px-3 py-2 bg-surface-elevated border border-border rounded text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-gold transition-colors"
+                  className="flex-1 px-3 py-2 bg-surface-card border border-gold/10 text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-gold/40 transition-colors"
                   required
                 />
                 <button
                   type="submit"
                   disabled={nlStatus === "loading"}
-                  className="px-4 py-2 bg-gold text-black text-sm font-semibold rounded hover:bg-gold-light transition-colors disabled:opacity-50"
+                  className="px-4 py-2 bg-gold text-black text-xs font-semibold uppercase tracking-[0.1em] hover:bg-gold-light transition-colors disabled:opacity-50"
                 >
                   {nlStatus === "loading" ? "..." : "Join"}
                 </button>
@@ -144,9 +151,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="mt-12 pt-8 border-t border-gold/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-text-muted">
-            &copy; 2023 {BRAND.legalName}. All rights reserved.
+            &copy; 2026 {BRAND.legalName}. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link href="/privacy" className="text-xs text-text-muted hover:text-text-secondary transition-colors">

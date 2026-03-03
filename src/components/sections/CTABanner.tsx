@@ -13,24 +13,23 @@ interface CTABannerProps {
 }
 
 export default function CTABanner({
-  heading = "Become an Executive",
+  heading = "Your Future Is Not Uncertain. It Is Inevitable.",
   subtext = "Join The Boardroom. Where operators build wealth through AI, real estate, and investing. No fluff. No theory. Just systems.",
   buttonText = "Join The Boardroom",
   buttonHref = SKOOL_URL,
 }: CTABannerProps) {
   return (
-    <section className="py-24 sm:py-32 relative overflow-hidden">
-      {/* Gold gradient line */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold to-transparent" />
+    <section className="py-32 sm:py-40 relative overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 divider-gold" />
 
       <Container className="text-center max-w-3xl">
         <FadeInOnScroll>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-[1.15] mb-8">
             {heading}
           </h2>
         </FadeInOnScroll>
         <FadeInOnScroll delay={0.1}>
-          <p className="text-lg text-text-secondary mb-10 leading-relaxed">
+          <p className="text-lg font-light text-text-secondary mb-12 leading-relaxed">
             {subtext}
           </p>
         </FadeInOnScroll>
@@ -41,7 +40,7 @@ export default function CTABanner({
         </FadeInOnScroll>
       </Container>
 
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 divider-gold" />
     </section>
   );
 }

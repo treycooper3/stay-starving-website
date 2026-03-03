@@ -1,105 +1,78 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
 import Button from "@/components/ui/Button";
 import Container from "@/components/layout/Container";
-import { BRAND, SKOOL_URL } from "@/lib/constants";
+import WordReveal from "@/components/animations/WordReveal";
+import SSParticleBackground from "@/components/animations/SSParticleBackground";
+import { SKOOL_URL } from "@/lib/constants";
 
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Subtle gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-[#0a0a0a] to-[#0d0d0d]" />
+      {/* Base gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#050505] via-[#080808] to-[#050505]" />
 
-      {/* Ambient glow - top */}
+      {/* SS Neural Network — full-screen background, blends seamlessly */}
+      <SSParticleBackground />
+
+      {/* Subtle ambient glow behind the network */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
-        className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-gold/[0.04] rounded-full blur-[150px]"
+        transition={{ duration: 2.5 }}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-blue-500/[0.03] rounded-full blur-[200px]"
       />
 
-      {/* Ambient glow - center */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.6 }}
-        transition={{ duration: 2.5, delay: 0.5 }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold/[0.03] rounded-full blur-[120px]"
-      />
-
-      {/* Thin gold line accent */}
-      <motion.div
-        initial={{ scaleX: 0 }}
-        animate={{ scaleX: 1 }}
-        transition={{ duration: 1.5, delay: 1 }}
-        className="absolute top-[15%] left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent"
-      />
-
-      <Container className="relative z-10 text-center max-w-4xl">
-        {/* Logo */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          className="mb-10"
-        >
-          <div className="relative inline-block">
-            <Image
-              src="/logos/stay_starving_logo.png"
-              alt="Stay Starving"
-              width={160}
-              height={160}
-              className="mx-auto"
-              priority
+      {/* Text content — centered over the neural network */}
+      <Container className="relative z-10 text-center max-w-5xl">
+        {/* Primary keyword heading */}
+        <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light leading-[1.05] text-text-primary mb-2">
+          <span className="block">
+            <WordReveal text="Stay Starving" initialDelay={0.3} />
+          </span>
+          <span className="block mt-2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+            <WordReveal
+              text="Holdings"
+              initialDelay={0.7}
+              className="text-gradient-gold"
             />
-          </div>
-        </motion.div>
+          </span>
+        </h1>
 
-        {/* Main headline */}
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 leading-[0.95]"
-        >
-          <span className="text-gradient-gold">{BRAND.name}</span>
-        </motion.h1>
-
-        {/* Divider line */}
+        {/* Gold divider */}
         <motion.div
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="w-16 h-[2px] bg-gold mx-auto mb-6"
+          transition={{ duration: 0.8, delay: 1.2, ease: [0.22, 1, 0.36, 1] }}
+          className="w-20 h-[1px] divider-gold mx-auto my-8"
         />
 
-        {/* Mission */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
+        {/* Secondary keyword heading — division verticals */}
+        <motion.h2
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-xl sm:text-2xl md:text-3xl font-light text-text-primary tracking-wide max-w-2xl mx-auto mb-3"
+          transition={{ duration: 0.8, delay: 1.4 }}
+          className="text-sm sm:text-base uppercase tracking-[0.25em] text-text-secondary font-light mb-4"
         >
-          {BRAND.mission}
-        </motion.p>
+          AI Consulting · Real Estate · Media Production · Digital Ventures
+        </motion.h2>
 
-        {/* Tagline */}
+        {/* Supporting descriptor */}
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.7 }}
-          className="text-sm sm:text-base uppercase tracking-[0.3em] text-gold/70 mb-14"
+          transition={{ duration: 0.8, delay: 1.6 }}
+          className="font-serif text-lg sm:text-xl italic text-text-muted max-w-2xl mx-auto mb-14"
         >
-          Digitally. Physically. Financially.
+          A systems-driven holding company engineering $100M+ in diversified holdings.
         </motion.p>
 
         {/* CTAs */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.9 }}
+          transition={{ duration: 0.8, delay: 2.0 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <Button href="/portfolio" size="lg">
@@ -110,21 +83,6 @@ export default function HeroSection() {
           </Button>
         </motion.div>
       </Container>
-
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 0.8 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-      >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
-        >
-          <ChevronDown size={20} className="text-gold/40" />
-        </motion.div>
-      </motion.div>
     </section>
   );
 }

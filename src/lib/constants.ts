@@ -116,7 +116,7 @@ export const DIVISIONS = [
     longDescription:
       "Opulent Sky Solutions provides professional aerial photography and drone services, specializing in real estate. From stunning listing photos that sell homes faster to commercial property surveys and event coverage, we deliver sky-high perspectives that ground-level cameras can't match. Fully licensed and insured, Opulent Sky bridges the gap between real estate and technology, giving every property the premium visual treatment it deserves.",
     category: "real_estate",
-    icon: "Camera",
+    icon: "Drone",
     instagramUrl: "https://www.instagram.com/opulentskysolutions",
     features: [
       "Aerial real estate photography",
@@ -170,7 +170,7 @@ export const DIVISIONS = [
       "Licensed Florida Realtor specializing in multifamily and commercial real estate. Systems-first approach with AI-powered lead qualification, market analysis, and deal flow for buyers and investors.",
     longDescription:
       "Trey Cooper Realty provides licensed real estate agent services powered by technology. I specialize in multifamily and commercial. From AI-driven lead qualification to data-backed market analysis, we bring a systems-first approach to every transaction. Whether you're buying your first home, acquiring an investment property, or selling a portfolio asset, you get an agent who thinks like an investor and operates like an engineer.",
-    category: "services",
+    category: "real_estate",
     icon: "Home",
     instagramUrl: "https://www.instagram.com/stayinvestedre",
     brokerUrl: "https://www.itgrealty.com/trey-cooper/",
@@ -194,7 +194,6 @@ export const CATEGORIES = [
   { value: "apparel", label: "Apparel" },
   { value: "investments", label: "Investments" },
   { value: "nonprofit", label: "Nonprofit" },
-  { value: "services", label: "Services" },
 ] as const;
 
 export const NAV_LINKS = [
@@ -264,7 +263,7 @@ export const MEMBERSHIP_PRICING = {
 export const STATS = [
   { value: 9, label: "Divisions", suffix: "", prefix: "" },
   { value: 3, label: "Course Tracks", suffix: "", prefix: "" },
-  { value: 50, label: "Target", suffix: "M", prefix: "$" },
+  { value: 100, label: "Target", suffix: "M", prefix: "$" },
   { value: 6, label: "Gamification Levels", suffix: "", prefix: "" },
 ] as const;
 
@@ -282,7 +281,7 @@ export const MILESTONES = [
   { year: "2025", title: "Holdings LLC", description: "Stay Starving Holdings LLC established in Wyoming" },
   { year: "2025", title: "Luxcor AI", description: "Built the WAT Framework.Luxcor AI automation division launched" },
   { year: "2026", title: "The Boardroom", description: "C-Suite School launched.education arm goes live" },
-  { year: "2030", title: "$50M Vision", description: "Target: $50M+ diversified holdings with 100+ global team" },
+  { year: "2030", title: "$100M Vision", description: "Target: $100M+ diversified holdings with 100+ global team" },
 ] as const;
 
 export const FAQ_ITEMS = [

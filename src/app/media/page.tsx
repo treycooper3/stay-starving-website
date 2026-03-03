@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import MediaContent from "./MediaContent";
 
 export const metadata: Metadata = {
-  title: "Media",
+  title: "Media — AI, Real Estate & Wealth Building Content",
   description:
-    "Watch the latest Stay Starving content. AI automation, real estate strategy, investing, and building wealth through systems.",
+    "Stay Starving Media content hub — YouTube, podcasts, and articles on AI automation, real estate investing, the WAT framework, and systems-driven wealth building by Charles Cooper III.",
+  alternates: { canonical: "https://staystarving.com/media" },
 };
 
 export default function MediaPage() {
