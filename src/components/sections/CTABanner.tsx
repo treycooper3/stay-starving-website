@@ -13,10 +13,10 @@ interface CTABannerProps {
 }
 
 export default function CTABanner({
-  heading = "Your Future Is Not Uncertain. It Is Inevitable.",
-  subtext = "Join The Boardroom. Where operators build wealth through AI, real estate, and investing. No fluff. No theory. Just systems.",
-  buttonText = "Join The Boardroom",
-  buttonHref = SKOOL_URL,
+  heading = "Start Building Wealth Through Systems — Join Free",
+  subtext = "The Boardroom: free courses on AI automation, real estate investing, and stock market trading. 36+ lessons. Private community. No credit card required.",
+  buttonText = "Join The Boardroom Free",
+  buttonHref = "/boardroom",
 }: CTABannerProps) {
   return (
     <section className="py-32 sm:py-40 relative overflow-hidden">

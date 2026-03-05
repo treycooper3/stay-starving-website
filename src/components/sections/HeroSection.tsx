@@ -53,7 +53,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.4 }}
-          className="text-sm sm:text-base uppercase tracking-[0.25em] text-text-secondary font-light mb-4"
+          className="text-base sm:text-lg md:text-xl uppercase tracking-[0.25em] text-text-secondary font-light mb-4"
         >
           AI Consulting · Real Estate · Media Production · Digital Ventures
         </motion.h2>
@@ -65,7 +65,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 1.6 }}
           className="font-serif text-lg sm:text-xl italic text-text-muted max-w-2xl mx-auto mb-14"
         >
-          A systems-driven holding company engineering $100M+ in diversified holdings.
+          AI automation, wealth education, and real estate — built by operators, for operators.
         </motion.p>
 
         {/* CTAs */}
@@ -78,7 +78,7 @@ export default function HeroSection() {
           <Button href="/portfolio" size="lg">
             Explore Our Portfolio
           </Button>
-          <Button href={SKOOL_URL} variant="ghost" size="lg">
+          <Button href="/boardroom" variant="ghost" size="lg">
             Join The Boardroom
           </Button>
         </motion.div>

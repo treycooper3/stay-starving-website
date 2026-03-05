@@ -41,7 +41,7 @@ export default function BoardroomContent() {
         <Container className="relative z-10 text-center max-w-4xl">
           <FadeInOnScroll>
             <Badge variant="gold" className="mb-6">
-              <Crown size={12} className="mr-1" /> Premium Membership
+              <Crown size={12} className="mr-1" /> Free to Join
             </Badge>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
               The Boardroom
@@ -56,7 +56,7 @@ export default function BoardroomContent() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button href={SKOOL_URL} size="lg">
-                Become an Executive
+                Join Free
               </Button>
               <Button href="#tracks" variant="ghost" size="lg">
                 View Course Tracks
@@ -213,8 +213,46 @@ export default function BoardroomContent() {
         </Container>
       </section>
 
-      {/* FAQ */}
+      {/* Pricing */}
       <section className="py-24">
+        <Container className="max-w-3xl">
+          <FadeInOnScroll>
+            <div className="text-center mb-12">
+              <p className="text-sm font-semibold uppercase tracking-widest text-gold mb-4">
+                Pricing
+              </p>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+                Currently Free
+              </h2>
+              <p className="text-text-secondary max-w-xl mx-auto">
+                The Boardroom is free to join right now. All three course tracks,
+                the private community, and gamified progression — no credit card
+                required. This won&apos;t last forever.
+              </p>
+            </div>
+          </FadeInOnScroll>
+
+          <FadeInOnScroll delay={0.1}>
+            <div className="rounded-lg border border-gold/30 bg-gold/5 p-8 text-center">
+              <p className="text-5xl font-bold text-gold mb-2">$0</p>
+              <p className="text-text-secondary mb-2">per month</p>
+              <p className="text-xs text-text-muted mb-6">
+                36+ lessons across 3 tracks, private community, gamified
+                progression
+              </p>
+              <Button href={SKOOL_URL} size="lg">
+                Join Free Now
+              </Button>
+              <p className="text-xs text-text-muted mt-4">
+                Join now before paid tiers launch
+              </p>
+            </div>
+          </FadeInOnScroll>
+        </Container>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-surface">
         <Container className="max-w-3xl">
           <FadeInOnScroll>
             <div className="text-center mb-12">
@@ -274,7 +312,7 @@ export default function BoardroomContent() {
               engineering their freedom through systems.
             </p>
             <Button href={SKOOL_URL} size="lg">
-              Become an Executive
+              Join Free
             </Button>
           </FadeInOnScroll>
         </Container>

@@ -12,7 +12,7 @@ const SERVICES = [
     name: "Luxcor AI",
     tagline: "AI Automation & Consulting",
     description:
-      "Custom AI automation solutions built on the WAT Framework: Workflows, Agents, Tools. We architect systems where AI handles reasoning and deterministic code handles execution. The result: reliable automation that actually works in production.",
+      "Custom AI automation solutions built on the WAT Framework: Workflows, Agents, Tools. We architect systems where AI handles reasoning and deterministic code handles execution. The result: reliable automation that actually works in production. 6+ websites and apps built for clients.",
     features: [
       "Custom AI agent development & deployment",
       "Voice agent setup (lead qualification, support, scheduling)",
@@ -20,6 +20,7 @@ const SERVICES = [
       "Business process audit & optimization",
       "Monthly retainer support & monitoring",
     ],
+    pricing: "Starting at $997",
     cta: "Book a Discovery Call",
     href: "https://luxcor.tech/",
   },
@@ -57,12 +58,12 @@ export default function ServicesContent() {
               Our Services
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">
-              Systems-First Services
+              AI Automation &amp; Real Estate Services
             </h1>
             <p className="text-lg text-text-secondary">
-              Two service divisions, one approach: use technology to deliver
-              better results, faster, and at scale. Every engagement is backed
-              by the full Stay Starving infrastructure.
+              Custom AI automation starting at $997. Licensed Florida real
+              estate for multifamily and commercial. 6+ client projects
+              delivered. 3 houses sold in 2025.
             </p>
           </FadeInOnScroll>
         </Container>

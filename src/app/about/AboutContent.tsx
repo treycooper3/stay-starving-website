@@ -62,13 +62,14 @@ export default function AboutContent() {
               <span className="text-gradient-gold">It&apos;s an operating system.</span>
             </h1>
             <p className="font-serif text-xl sm:text-2xl italic text-text-muted mb-6">
-              You don&apos;t manifest anything. You create it.
+              AI consulting, real estate investing, and wealth education — built on systems, not hustle.
             </p>
             <p className="text-lg text-text-secondary leading-relaxed">
-              Founded by {BRAND.founder}, Stay Starving Holdings is a
-              diversified holding company that builds financial freedom through
-              architected systems, not by working harder, but by building
-              infrastructure that compounds.
+              Founded by {BRAND.founder} — mechanical engineer, licensed Florida
+              Realtor, and AI systems architect. Stay Starving Holdings builds
+              financial freedom through AI automation (LuxCor AI), real estate
+              (Trey Cooper Realty), education (The Boardroom), and fashion
+              (KayphoriaX — 7 NYFW seasons).
             </p>
           </FadeInOnScroll>
         </Container>
@@ -82,7 +83,7 @@ export default function AboutContent() {
               <div className="rounded-lg bg-surface-elevated border border-border overflow-hidden">
                 <Image
                   src="/images/Aboutme.JPG"
-                  alt={BRAND.founder}
+                  alt="Charles Trey Cooper III — Founder of Stay Starving Holdings, AI Engineer and Licensed Florida Realtor"
                   width={600}
                   height={800}
                   className="w-full h-auto"

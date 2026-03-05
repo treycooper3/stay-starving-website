@@ -27,11 +27,12 @@ export default function PortfolioContent() {
               Our Portfolio
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">
-              The Full Ecosystem.
+              Our Portfolio — AI, Real Estate, Fashion &amp; More
             </h1>
             <p className="text-lg text-text-secondary max-w-2xl">
-              Every division is a system. Every system feeds the flywheel.
-              Explore the full Stay Starving ecosystem.
+              Nine divisions across AI automation, real estate, high fashion,
+              media, and wealth education. Explore each division and what
+              we&apos;ve built.
             </p>
           </FadeInOnScroll>
         </Container>
@@ -59,61 +60,38 @@ export default function PortfolioContent() {
 
           {/* Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filtered.map((div) => {
-              const isExternal = "externalUrl" in div;
-              const cardContent = (
-                <>
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="p-3 rounded-lg bg-gold/10">
-                      <DivisionIcon
-                        name={div.icon}
-                        size={28}
-                        className="text-gold"
-                      />
-                    </div>
-                    <Badge variant="gold">
-                      {div.category.replace("_", " ")}
-                    </Badge>
+            {filtered.map((div) => (
+              <Card
+                key={div.slug}
+                href={`/portfolio/${div.slug}`}
+                className="group h-full flex flex-col"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div className="p-3 rounded-lg bg-gold/10">
+                    <DivisionIcon
+                      name={div.icon}
+                      size={28}
+                      className="text-gold"
+                    />
                   </div>
-                  <h3 className="text-xl font-bold text-text-primary mb-2">
-                    {div.name}
-                  </h3>
-                  <p className="text-sm text-text-muted leading-relaxed mb-2">
-                    {div.tagline}
-                  </p>
-                  <p className="text-sm text-text-secondary leading-relaxed flex-1">
-                    {div.description}
-                  </p>
-                  <div className="mt-6 flex items-center text-sm font-medium text-gold opacity-0 group-hover:opacity-100 transition-opacity">
-                    View Division <ArrowRight size={14} className="ml-1" />
-                  </div>
-                </>
-              );
-
-              if (isExternal) {
-                return (
-                  <a
-                    key={div.slug}
-                    href={div.externalUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block rounded-lg border border-border bg-surface-elevated p-6 transition-all duration-300 hover:border-gold/50 hover:glow-gold group h-full flex flex-col"
-                  >
-                    {cardContent}
-                  </a>
-                );
-              }
-
-              return (
-                <Card
-                  key={div.slug}
-                  href={`/portfolio/${div.slug}`}
-                  className="group h-full flex flex-col"
-                >
-                  {cardContent}
-                </Card>
-              );
-            })}
+                  <Badge variant="gold">
+                    {div.category.replace("_", " ")}
+                  </Badge>
+                </div>
+                <h3 className="text-xl font-bold text-text-primary mb-2">
+                  {div.name}
+                </h3>
+                <p className="text-sm text-text-muted leading-relaxed mb-2">
+                  {div.tagline}
+                </p>
+                <p className="text-sm text-text-secondary leading-relaxed flex-1">
+                  {div.description}
+                </p>
+                <div className="mt-6 flex items-center text-sm font-medium text-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  View Division <ArrowRight size={14} className="ml-1" />
+                </div>
+              </Card>
+            ))}
           </div>
         </Container>
       </section>

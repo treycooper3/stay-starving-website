@@ -61,11 +61,11 @@ export default function ContactContent() {
               Contact
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">
-              Let&apos;s Talk
+              Get in Touch — AI Consulting, Real Estate &amp; More
             </h1>
             <p className="text-lg text-text-secondary">
-              Whether you&apos;re looking for AI automation, real estate services,
-              membership, or a partnership, we&apos;re listening.
+              Need AI automation, Florida real estate services, or a partnership?
+              Tell us what you&apos;re building. We respond within 48 hours.
             </p>
           </FadeInOnScroll>
         </Container>
@@ -87,7 +87,7 @@ export default function ContactContent() {
                     <div className="p-6 rounded-lg border border-gold/20 bg-gold/5 text-center">
                       <p className="text-lg font-bold text-gold mb-2">Message Sent!</p>
                       <p className="text-sm text-text-secondary">
-                        Thanks for reaching out. We&apos;ll get back to you shortly.
+                        Thanks for reaching out. We typically respond within 48 hours.
                       </p>
                       <button
                         onClick={() => setFormState("idle")}
@@ -172,13 +172,18 @@ export default function ContactContent() {
                         </p>
                       )}
 
-                      <Button
-                        type="submit"
-                        size="lg"
-                        className="w-full sm:w-auto"
-                      >
-                        {formState === "loading" ? "Sending..." : "Send Message"}
-                      </Button>
+                      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                        <Button
+                          type="submit"
+                          size="lg"
+                          className="w-full sm:w-auto"
+                        >
+                          {formState === "loading" ? "Sending..." : "Send Message"}
+                        </Button>
+                        <p className="text-xs text-text-muted">
+                          We typically respond within 48 hours.
+                        </p>
+                      </div>
                     </form>
                   )}
                 </div>
@@ -229,12 +234,12 @@ export default function ContactContent() {
 
               <FadeInOnScroll delay={0.4}>
                 <div className="rounded-lg border border-gold/20 bg-gold/5 p-6">
-                  <h3 className="font-bold mb-2">Want to Join?</h3>
+                  <h3 className="font-bold mb-2">Join The Boardroom</h3>
                   <p className="text-sm text-text-muted mb-4">
-                    Apply to become an Executive in The Boardroom.
+                    Free membership community for operators building wealth through systems.
                   </p>
-                  <Button href={SKOOL_URL} variant="ghost" size="sm">
-                    Learn More
+                  <Button href="/boardroom" variant="ghost" size="sm">
+                    Join Free
                   </Button>
                 </div>
               </FadeInOnScroll>

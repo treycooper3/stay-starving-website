@@ -1,6 +1,7 @@
 import HeroSection from "@/components/sections/HeroSection";
 import MissionSection from "@/components/sections/MissionSection";
 import StatsSection from "@/components/sections/StatsSection";
+import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import DivisionsGrid from "@/components/sections/DivisionsGrid";
 import CTABanner from "@/components/sections/CTABanner";
 import NewsletterSection from "@/components/sections/NewsletterSection";
@@ -20,7 +21,7 @@ const organizationSchema = {
     height: 512,
   },
   description:
-    "A systems-driven luxury holding company building $100M+ in diversified holdings across AI consulting, media production, digital products, real estate investment, and specialty contracting. Founded on the principle that wealth is engineered through systems, not luck.",
+    "Stay Starving Holdings LLC operates 9 divisions across AI automation (LuxCor AI — starting at $997), real estate (Trey Cooper Realty — 3 houses sold in 2025), education (The Boardroom — free, 36+ lessons), fashion (KayphoriaX — 7 NYFW seasons), media (Stay Starving Media — 12+ videos), drone services (Opulent Sky Solutions), and strategic investments. Founded by Charles 'Trey' Cooper III, licensed Florida Realtor and AI systems architect.",
   foundingDate: "2023",
   founder: {
     "@type": "Person",
@@ -34,6 +35,45 @@ const organizationSchema = {
     "https://www.instagram.com/staystarvingofficial/",
     "https://x.com/treythesavage3",
   ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Stay Starving Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "LuxCor AI — AI Workflow Audit",
+          description:
+            "Custom AI automation audit using the WAT Framework. Identifies automation opportunities across your business workflows.",
+        },
+        price: "997",
+        priceCurrency: "USD",
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "LuxCor AI — Growth AI Agent Retainer",
+          description:
+            "Monthly AI agent development and maintenance. Custom AI agents, voice agents, and workflow automation.",
+        },
+        price: "4500",
+        priceCurrency: "USD",
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "The Boardroom — Free Wealth Building Community",
+          description:
+            "Free membership community with 36+ lessons across AI, real estate, and investing tracks. No credit card required.",
+        },
+        price: "0",
+        priceCurrency: "USD",
+      },
+    ],
+  },
   subOrganization: [
     {
       "@type": "Organization",
@@ -128,6 +168,38 @@ const faqSchema = {
         text: "Stay Starving was founded by Charles 'Trey' Cooper III, a licensed Florida Realtor, AI systems architect, and serial entrepreneur. He began investing in stocks and crypto at 18, became a licensed Realtor at 22, purchased his first investment property at 25, and established Stay Starving Holdings LLC to build a diversified portfolio targeting $100M+ through systems-driven wealth building.",
       },
     },
+    {
+      "@type": "Question",
+      name: "How much does AI automation cost?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "LuxCor AI offers three pricing tiers: a Starter AI Workflow Audit at $997 (one-time), a Growth AI Agent Retainer at $4,500/month for ongoing AI agent development and maintenance, and Enterprise Custom AI Builds ranging from $30,000 to $50,000 for full-scale AI infrastructure. All engagements use the proprietary WAT Framework for production-grade reliability.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is The Boardroom free?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. The Boardroom is a completely free membership community with 36+ lessons across three tracks: AI Systems, Real Estate, and Stock Market & Options. No credit card required. Members progress through gamified ranks from Associate to C-Suite based on engagement and results. Join at staystarving.com/boardroom.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Stay Starving offer real estate services in Florida?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Trey Cooper Realty is a licensed Florida real estate service specializing in multifamily and commercial properties. Charles 'Trey' Cooper III is a licensed Florida Realtor who has sold 3 houses in 2025. The service combines traditional real estate expertise with AI-powered lead qualification and market analysis.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What was KayphoriaX featured at New York Fashion Week?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "KayphoriaX, the high fashion brand affiliated with Stay Starving Holdings, has been featured across 7 seasons of New York Fashion Week (NYFW). The brand focuses on body positivity, creative self-expression, and diversity in fashion. The KXSS collaboration with Stay Starving offers premium streetwear hoodies and sweatpants.",
+      },
+    },
   ],
 };
 
@@ -140,6 +212,7 @@ export default function HomePage() {
       <HeroSection />
       <MissionSection />
       <StatsSection />
+      <TestimonialsSection />
       <DivisionsGrid />
       <CTABanner />
       <NewsletterSection />

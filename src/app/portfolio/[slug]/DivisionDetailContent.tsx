@@ -11,6 +11,13 @@ import type { DIVISIONS } from "@/lib/constants";
 
 type Division = (typeof DIVISIONS)[number];
 
+const CREDIBILITY_BADGES: Record<string, string> = {
+  "luxcor-ai": "6 Websites & 1 App Built",
+  "trey-cooper-realty": "3 Houses Sold in 2025",
+  "kayphoriax": "7 NYFW Seasons Featured",
+  "the-boardroom": "Join Free — Growing Community",
+};
+
 export default function DivisionDetailContent({
   division,
 }: {
@@ -53,6 +60,14 @@ export default function DivisionDetailContent({
             <p className="text-xl text-gold font-medium mb-4">
               {division.tagline}
             </p>
+
+            {CREDIBILITY_BADGES[division.slug] && (
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/5 text-sm font-medium text-gold mb-4">
+                <Check size={14} className="shrink-0" />
+                {CREDIBILITY_BADGES[division.slug]}
+              </div>
+            )}
+
             <p className="text-lg text-text-secondary leading-relaxed">
               {division.description}
             </p>

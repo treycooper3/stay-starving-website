@@ -91,11 +91,11 @@ export const DIVISIONS = [
   {
     name: "KayphoriaX",
     slug: "kayphoriax",
-    tagline: "High fashion. Body positivity. Creative self-expression.",
+    tagline: "High fashion. 7 NYFW seasons. Creative self-expression.",
     description:
-      "KayphoriaX is a high fashion lingerie couture brand specializing in diversity-focused swimwear, apparel, accessories, and high fashion lingerie. Founded by Kayci (KAYPHORIA), a Tuskegee University graduate, the brand inspires confidence and creative self-expression.",
+      "KayphoriaX is a high fashion lingerie couture brand featured across 7 seasons of New York Fashion Week. Specializing in diversity-focused swimwear, apparel, accessories, and high fashion lingerie. Founded by Kayci (KAYPHORIA), a Tuskegee University graduate.",
     longDescription:
-      "KayphoriaX is a high fashion lingerie couture brand built on the pillars of body positivity, creative self-expression, and empowerment. Founded by Kayci, known as KAYPHORIA, a Tuskegee University graduate in Pre-Vet and Animal Science who transitioned from content creation to building a fashion empire. The brand's mission is to inspire people around the world to have confidence in their bodies and themselves. KXSS, the collaboration between KayphoriaX and Stay Starving, merges bold couture design with relentless identity. Collections include HEART ABLAZE, GOOD VS. EVIL, DREAMLAND, and GARDEN.",
+      "KayphoriaX is a high fashion lingerie couture brand featured across 7 seasons of New York Fashion Week, built on the pillars of body positivity, creative self-expression, and empowerment. Founded by Kayci, known as KAYPHORIA, a Tuskegee University graduate in Pre-Vet and Animal Science who transitioned from content creation to building a fashion empire. The brand's mission is to inspire people around the world to have confidence in their bodies and themselves. KXSS, the collaboration between KayphoriaX and Stay Starving, merges bold couture design with relentless identity. Collections include HEART ABLAZE, GOOD VS. EVIL, DREAMLAND, and GARDEN.",
     category: "apparel",
     icon: "Shirt",
     externalUrl: "https://kayphoriax.com",
@@ -261,10 +261,10 @@ export const MEMBERSHIP_PRICING = {
 } as const;
 
 export const STATS = [
-  { value: 9, label: "Divisions", suffix: "", prefix: "" },
-  { value: 3, label: "Course Tracks", suffix: "", prefix: "" },
-  { value: 100, label: "Target", suffix: "M", prefix: "$" },
-  { value: 6, label: "Gamification Levels", suffix: "", prefix: "" },
+  { value: 6, label: "Client Projects", suffix: "+", prefix: "" },
+  { value: 3, label: "Houses Sold", suffix: "", prefix: "" },
+  { value: 7, label: "NYFW Seasons", suffix: "", prefix: "" },
+  { value: 5800, label: "Social Following", suffix: "+", prefix: "" },
 ] as const;
 
 export const SOCIAL_LINKS = {

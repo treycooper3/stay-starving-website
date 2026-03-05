@@ -32,12 +32,12 @@ export default function ShopContent() {
               Apparel
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">
-              Wear the Brand
+              Shop KXSS — KayphoriaX x Stay Starving
             </h1>
             <p className="text-lg text-text-secondary max-w-2xl">
-              KXSS, a collaboration between KayphoriaX and Stay Starving.
-              Streetwear that speaks to the hustle. When you wear it, you&apos;re
-              not just wearing clothes. You&apos;re wearing a statement.
+              KXSS streetwear from KayphoriaX — the brand featured across 7
+              seasons of New York Fashion Week. Premium hoodies and sweatpants.
+              Limited drops. No restocks.
             </p>
           </FadeInOnScroll>
         </Container>
@@ -51,7 +51,7 @@ export default function ShopContent() {
               <div className="aspect-[4/3] rounded-lg bg-surface-elevated border border-border overflow-hidden relative">
                 <Image
                   src="/images/kxss-hoodie.webp"
-                  alt="KXSS Limited Edition Hoodie"
+                  alt="KXSS Limited Edition Hoodie — KayphoriaX x Stay Starving streetwear collaboration featured at 7 NYFW seasons"
                   fill
                   className="object-cover"
                 />

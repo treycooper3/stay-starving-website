@@ -116,11 +116,12 @@ export default function MediaContent() {
               Stay Starving Media
             </p>
             <h1 className="text-4xl sm:text-5xl font-bold mb-6">
-              Content That Builds
+              AI &amp; Wealth Building Videos
             </h1>
             <p className="text-lg text-text-secondary max-w-2xl">
-              AI automation, real estate strategy, investing, and the systems
-              behind a growing holding company. Watch, learn, build.
+              Learn AI automation, real estate investing, and wealth-building
+              systems from an engineer who builds them. New videos weekly on
+              YouTube. 12+ episodes and counting.
             </p>
           </FadeInOnScroll>
         </Container>

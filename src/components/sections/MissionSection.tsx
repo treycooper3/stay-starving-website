@@ -17,9 +17,9 @@ export default function MissionSection() {
         </FadeInOnScroll>
         <FadeInOnScroll delay={0.1}>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-[1.15] mb-10">
-            We don&apos;t just build businesses.{" "}
-            <span className="text-gradient-gold">We architect systems</span>{" "}
-            that build wealth without us.
+            AI Automation, Real Estate &amp; Wealth Education{" "}
+            — <span className="text-gradient-gold">Architected to Scale</span>{" "}
+            Without You.
           </h2>
         </FadeInOnScroll>
         <FadeInOnScroll delay={0.2}>

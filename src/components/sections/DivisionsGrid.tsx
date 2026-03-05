@@ -26,12 +26,9 @@ export default function DivisionsGrid() {
         </FadeInOnScroll>
 
         <StaggerChildren className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {DIVISIONS.map((div) => {
-            const href = "externalUrl" in div ? div.externalUrl : `/portfolio/${div.slug}`;
-            const isExternal = "externalUrl" in div;
-
-            const cardContent = (
-              <>
+          {DIVISIONS.map((div) => (
+            <StaggerItem key={div.slug}>
+              <Card href={`/portfolio/${div.slug}`} className="group h-full flex flex-col">
                 <div className="flex items-start justify-between mb-6">
                   <DivisionIcon name={div.icon} />
                   <Badge variant="gold">{div.category.replace("_", " ")}</Badge>
@@ -49,28 +46,9 @@ export default function DivisionsGrid() {
                     className="ml-1 translate-x-0 group-hover:translate-x-1 transition-transform duration-300"
                   />
                 </div>
-              </>
-            );
-
-            return (
-              <StaggerItem key={div.slug}>
-                {isExternal ? (
-                  <a
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block border border-gold/[0.06] bg-surface-card p-8 transition-all duration-500 hover:border-gold/20 hover:shadow-[0_4px_30px_rgba(212,168,67,0.06)] group h-full flex flex-col"
-                  >
-                    {cardContent}
-                  </a>
-                ) : (
-                  <Card href={href} className="group h-full flex flex-col">
-                    {cardContent}
-                  </Card>
-                )}
-              </StaggerItem>
-            );
-          })}
+              </Card>
+            </StaggerItem>
+          ))}
         </StaggerChildren>
       </Container>
     </section>
