@@ -81,7 +81,7 @@ Stay Starving operates 9 divisions. Each one is a system — automated, measurab
 - First investment property at age 25
 - Investing in stocks and crypto since age 18
 - Built the WAT Framework for production-grade AI automation
-- Builder of 6+ websites using AI tools
+- Builder of 10+ client projects using AI tools
 
 ## WAT Framework (Workflows, Agents, Tools)
 LuxCor AI's proprietary AI systems architecture:

@@ -12,7 +12,7 @@ const SERVICES = [
     name: "Luxcor AI",
     tagline: "AI Automation & Consulting",
     description:
-      "Custom AI automation solutions built on the WAT Framework: Workflows, Agents, Tools. We architect systems where AI handles reasoning and deterministic code handles execution. The result: reliable automation that actually works in production. 6+ websites and apps built for clients.",
+      "Custom AI automation solutions built on the WAT Framework: Workflows, Agents, Tools. We architect systems where AI handles reasoning and deterministic code handles execution. The result: reliable automation that actually works in production. 10+ client projects delivered.",
     features: [
       "Custom AI agent development & deployment",
       "Voice agent setup (lead qualification, support, scheduling)",
