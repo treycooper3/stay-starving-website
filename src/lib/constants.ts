@@ -17,20 +17,21 @@ export const DIVISIONS = [
   {
     name: "C3 Properties",
     slug: "c3-properties",
-    tagline: "Real estate. Airbnb. Asset-backed income.",
+    tagline: "Real estate. Airbnb. Short & long-term rentals.",
     description:
-      "Short-term rental operations and real estate portfolio management. Building wealth through strategic property acquisitions, Airbnb optimization, and scalable property systems.",
+      "Real estate investment and full-service property management. Building wealth through strategic property acquisitions, Airbnb optimization, long-term tenant placement, and scalable property systems.",
     longDescription:
-      "C3 Properties is the real estate arm of Stay Starving Holdings. We operate a portfolio of short-term rental properties optimized for maximum cash flow through dynamic pricing, automated guest communication, and smart home technology. Our approach combines traditional real estate fundamentals with modern automation, from AI-powered pricing algorithms to fully automated guest experiences. Every property is a system, not just an asset.",
+      "C3 Properties is the real estate arm of Stay Starving Holdings. Backed by licensed Florida Realtors with over four years of experience and three years of hands-on property management, we operate a portfolio of rental properties optimized for maximum cash flow. Whether short-term vacation rentals or long-term tenant placement, our approach combines traditional real estate fundamentals with modern automation — dynamic pricing, AI-powered guest communication, and smart home technology. Every property is a business unit with clear KPIs, automated operations, and continuous optimization.",
     category: "real_estate",
     icon: "Building2",
     externalUrl: "https://c3properties.vercel.app",
     features: [
-      "Short-term rental portfolio management",
-      "Dynamic pricing optimization",
-      "Automated guest communication",
+      "Short-term & long-term rental management",
+      "Dynamic pricing optimization (AI-powered)",
+      "Automated guest communication (24/7)",
       "Smart home IoT integration",
-      "Property acquisition & analysis",
+      "Property acquisition & market analysis",
+      "Property setup, staging & photography",
     ],
   },
   {
@@ -98,7 +99,7 @@ export const DIVISIONS = [
       "KayphoriaX is a high fashion lingerie couture brand featured across 7 seasons of New York Fashion Week, built on the pillars of body positivity, creative self-expression, and empowerment. Founded by Kayci, known as KAYPHORIA, a Tuskegee University graduate in Pre-Vet and Animal Science who transitioned from content creation to building a fashion empire. The brand's mission is to inspire people around the world to have confidence in their bodies and themselves. KXSS, the collaboration between KayphoriaX and Stay Starving, merges bold couture design with relentless identity. Collections include HEART ABLAZE, GOOD VS. EVIL, DREAMLAND, and GARDEN.",
     category: "apparel",
     icon: "Shirt",
-    externalUrl: "https://kayphoriax.com",
+    externalUrl: "https://kayphoriax.style/",
     features: [
       "KXSS: KayphoriaX x Stay Starving collaboration",
       "High fashion lingerie couture",
@@ -261,10 +262,10 @@ export const MEMBERSHIP_PRICING = {
 } as const;
 
 export const STATS = [
-  { value: 6, label: "Client Projects", suffix: "+", prefix: "" },
+  { value: 10, label: "Client Projects", suffix: "+", prefix: "" },
   { value: 3, label: "Houses Sold", suffix: "", prefix: "" },
   { value: 7, label: "NYFW Seasons", suffix: "", prefix: "" },
-  { value: 5800, label: "Social Following", suffix: "+", prefix: "" },
+  { value: 5800, label: "Community", suffix: "+", prefix: "" },
 ] as const;
 
 export const SOCIAL_LINKS = {

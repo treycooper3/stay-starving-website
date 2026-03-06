@@ -9,28 +9,28 @@ const TESTIMONIALS = [
   {
     quote:
       "Watching your content on AI and investing made me actually start investing. I never thought I'd take the leap, but you broke it down in a way that made it real.",
-    name: "DM from follower",
+    name: "Mahlik F.",
     context: "AI & Investing Content",
   },
   {
     quote:
       "You inspired me to start pursuing my dreams and become better. The way you build systems and share the process — it changed how I think about wealth.",
-    name: "DM from follower",
+    name: "Jaylon",
     context: "Stay Starving Media",
   },
   {
     quote:
       "I started learning AI because of your content. Now I'm building automations for my own business. That shift wouldn't have happened without Stay Starving.",
-    name: "DM from follower",
+    name: "Christine B.",
     context: "LuxCor AI Content",
   },
 ];
 
 const PROOF_POINTS = [
-  { metric: "6+", label: "Websites & Apps Built", division: "LuxCor AI" },
+  { metric: "10+", label: "Client Projects Delivered", division: "LuxCor AI" },
   { metric: "3", label: "Houses Sold in 2025", division: "Trey Cooper Realty" },
   { metric: "7", label: "NYFW Seasons Featured", division: "KayphoriaX" },
-  { metric: "5,800+", label: "Social Following", division: "Stay Starving Media" },
+  { metric: "5,800+", label: "Community Members", division: "Stay Starving Media" },
 ];
 
 export default function TestimonialsSection() {
