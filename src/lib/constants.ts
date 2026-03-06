@@ -15,16 +15,16 @@ export const SKOOL_URL = "https://www.skool.com/charless-group-9799";
 
 export const DIVISIONS = [
   {
-    name: "C6 Properties",
-    slug: "c6-properties",
+    name: "C3 Properties",
+    slug: "c3-properties",
     tagline: "Real estate. Airbnb. Asset-backed income.",
     description:
       "Short-term rental operations and real estate portfolio management. Building wealth through strategic property acquisitions, Airbnb optimization, and scalable property systems.",
     longDescription:
-      "C6 Properties is the real estate arm of Stay Starving Holdings. We operate a portfolio of short-term rental properties optimized for maximum cash flow through dynamic pricing, automated guest communication, and smart home technology. Our approach combines traditional real estate fundamentals with modern automation, from AI-powered pricing algorithms to fully automated guest experiences. Every property is a system, not just an asset.",
+      "C3 Properties is the real estate arm of Stay Starving Holdings. We operate a portfolio of short-term rental properties optimized for maximum cash flow through dynamic pricing, automated guest communication, and smart home technology. Our approach combines traditional real estate fundamentals with modern automation, from AI-powered pricing algorithms to fully automated guest experiences. Every property is a system, not just an asset.",
     category: "real_estate",
     icon: "Building2",
-    externalUrl: "https://airbnb.com/h/melbournebeachstay",
+    externalUrl: "https://c3properties.vercel.app",
     features: [
       "Short-term rental portfolio management",
       "Dynamic pricing optimization",
@@ -277,7 +277,7 @@ export const SOCIAL_LINKS = {
 export const MILESTONES = [
   { year: "2018", title: "Started Investing", description: "Began investing in stocks and crypto at 18 years old" },
   { year: "2022", title: "Florida Realtor", description: "Licensed as a Florida Realtor at 22" },
-  { year: "2024", title: "First Property", description: "Purchased first investment property at 25. C6 Properties founded" },
+  { year: "2024", title: "First Property", description: "Purchased first investment property at 25. C3 Properties founded" },
   { year: "2025", title: "Holdings LLC", description: "Stay Starving Holdings LLC established in Wyoming" },
   { year: "2025", title: "Luxcor AI", description: "Built the WAT Framework.Luxcor AI automation division launched" },
   { year: "2026", title: "The Boardroom", description: "C-Suite School launched.education arm goes live" },

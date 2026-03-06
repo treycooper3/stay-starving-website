@@ -91,8 +91,8 @@ const organizationSchema = {
     },
     {
       "@type": "Organization",
-      name: "C6 Properties LLC",
-      url: "https://staystarving.com/portfolio/c6-properties",
+      name: "C3 Properties LLC",
+      url: "https://c3properties.vercel.app",
       description:
         "Real estate investment and short-term rental operations. Dynamic pricing, automated guest communication, and smart home technology for maximum cash flow.",
     },
@@ -133,7 +133,7 @@ const faqSchema = {
       name: "What is Stay Starving?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Stay Starving is a systems-driven luxury holding company founded by Charles 'Trey' Cooper III. It operates across nine divisions including AI consulting (LuxCor AI), media production (Stay Starving Media), real estate (C6 Properties), education (The Boardroom), strategic investments (Stay Starving Ventures), fashion (KayphoriaX), drone services (Opulent Sky Solutions), and specialty contracting. The company targets $100M+ in diversified holdings through systems-first wealth building.",
+        text: "Stay Starving is a systems-driven luxury holding company founded by Charles 'Trey' Cooper III. It operates across nine divisions including AI consulting (LuxCor AI), media production (Stay Starving Media), real estate (C3 Properties), education (The Boardroom), strategic investments (Stay Starving Ventures), fashion (KayphoriaX), drone services (Opulent Sky Solutions), and specialty contracting. The company targets $100M+ in diversified holdings through systems-first wealth building.",
       },
     },
     {
@@ -157,7 +157,7 @@ const faqSchema = {
       name: "What industries does Stay Starving operate in?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Stay Starving operates across AI consulting and automation (LuxCor AI), media production and content distribution (Stay Starving Media), real estate investment and short-term rentals (C6 Properties), education and community (The Boardroom), strategic investments (Stay Starving Ventures), high fashion (KayphoriaX), drone services (Opulent Sky Solutions), youth mentorship (Stay Starving Foundation), and licensed real estate services (Trey Cooper Realty).",
+        text: "Stay Starving operates across AI consulting and automation (LuxCor AI), media production and content distribution (Stay Starving Media), real estate investment and short-term rentals (C3 Properties), education and community (The Boardroom), strategic investments (Stay Starving Ventures), high fashion (KayphoriaX), drone services (Opulent Sky Solutions), youth mentorship (Stay Starving Foundation), and licensed real estate services (Trey Cooper Realty).",
       },
     },
     {

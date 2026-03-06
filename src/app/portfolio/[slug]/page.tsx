@@ -24,7 +24,7 @@ export async function generateMetadata({
     "the-boardroom": "The Boardroom — Free Wealth Building Community & Courses",
     "trey-cooper-realty": "Trey Cooper Realty — Florida Realtor | Multifamily & Commercial",
     "kayphoriax": "KayphoriaX — High Fashion Brand | 7 NYFW Seasons",
-    "c6-properties": "C6 Properties — Airbnb & Short-Term Rental Investing",
+    "c3-properties": "C3 Properties — Airbnb & Short-Term Rental Investing",
     "stay-starving-media": "Stay Starving Media — AI & Wealth Building YouTube Channel",
     "opulent-sky-solutions": "Opulent Sky Solutions — Professional Drone Services & Aerial Photography",
     "stay-starving-ventures": "Stay Starving Ventures — Strategic Investment Arm",

@@ -44,11 +44,12 @@ Stay Starving operates 9 divisions. Each one is a system — automated, measurab
 - Topics: Claude Code, Gemini AI, AI agents, automation tutorials, investing
 - Portfolio: https://staystarving.com/portfolio/stay-starving-media
 
-### C6 Properties — Airbnb & Short-Term Rentals
+### C3 Properties — Airbnb & Short-Term Rentals
+- Website: https://c3properties.vercel.app
 - Real estate investment and short-term rental operations
 - Dynamic pricing optimization, automated guest communication
 - Smart home IoT integration
-- Portfolio: https://staystarving.com/portfolio/c6-properties
+- Portfolio: https://staystarving.com/portfolio/c3-properties
 
 ### Opulent Sky Solutions — Drone Services
 - Professional drone services for real estate, commercial, and events
