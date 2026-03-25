@@ -15,7 +15,7 @@ const CREDIBILITY_BADGES: Record<string, string> = {
   "luxcor-ai": "6 Websites & 1 App Built",
   "trey-cooper-realty": "3 Houses Sold in 2025",
   "kayphoriax": "7 NYFW Seasons Featured",
-  "the-boardroom": "Join Free — Growing Community",
+  "the-boardroom": "Join for $19/mo — Growing Community",
 };
 
 export default function DivisionDetailContent({

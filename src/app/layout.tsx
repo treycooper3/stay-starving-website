@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Stay Starving",
   },
   description:
-    "AI automation services (LuxCor AI), free wealth-building courses (The Boardroom), licensed Florida real estate (Trey Cooper Realty), and fashion (KayphoriaX — 7 NYFW seasons). Built by operators, for operators.",
+    "AI automation services (LuxCor AI), wealth-building courses (The Boardroom, $19/mo), licensed Florida real estate (Trey Cooper Realty), and fashion (KayphoriaX — 7 NYFW seasons). Built by operators, for operators.",
   keywords: [
     "AI automation agency",
     "AI automation agency Florida",
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
     "WAT framework",
     "LuxCor AI",
     "Stay Starving",
-    "free wealth building community",
-    "AI courses free",
+    "wealth building community",
+    "AI courses",
     "real estate investing courses",
     "Florida commercial real estate agent",
     "multifamily realtor Florida",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     siteName: "Stay Starving",
     title: "Stay Starving Holdings | AI Automation, Real Estate & Wealth Education",
     description:
-      "AI automation services, free wealth-building courses, licensed Florida real estate, and high fashion — built by operators, for operators.",
+      "AI automation services, wealth-building courses ($19/mo), licensed Florida real estate, and high fashion — built by operators, for operators.",
     images: [
       {
         url: "/logos/stay_starving_logo.png",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Stay Starving Holdings | AI Automation & Wealth Education",
     description:
-      "AI automation (LuxCor AI), free wealth courses (The Boardroom), Florida real estate (Trey Cooper Realty). 6+ client projects. 7 NYFW seasons. Join free.",
+      "AI automation (LuxCor AI), wealth courses (The Boardroom, $19/mo), Florida real estate (Trey Cooper Realty). 6+ client projects. 7 NYFW seasons.",
     images: ["/logos/stay_starving_logo.png"],
     creator: "@treythesavage3",
   },

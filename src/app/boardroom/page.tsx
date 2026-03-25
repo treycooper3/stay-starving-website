@@ -3,9 +3,9 @@ import JsonLd from "@/components/seo/JsonLd";
 import BoardroomContent from "./BoardroomContent";
 
 export const metadata: Metadata = {
-  title: "The Boardroom — Free AI, Real Estate & Investing Courses | Join Now",
+  title: "The Boardroom — AI, Real Estate & Investing Courses | $19/mo",
   description:
-    "Join free: 36+ lessons across AI automation, real estate investing, and stock market trading. Gamified progression from Associate to C-Suite. No credit card required. Built for operators.",
+    "Join for $19/mo: 36+ lessons across AI automation, real estate investing, and stock market trading. Gamified progression from Associate to C-Suite. Built for operators.",
   alternates: { canonical: "https://staystarving.com/boardroom" },
 };
 
@@ -21,10 +21,10 @@ const courseSchema = {
     "@id": "https://staystarving.com/#organization",
     name: "Stay Starving Holdings LLC",
   },
-  isAccessibleForFree: true,
+  isAccessibleForFree: false,
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: "19",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
     url: "https://staystarving.com/boardroom",

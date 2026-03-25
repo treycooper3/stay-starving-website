@@ -13,9 +13,9 @@ interface CTABannerProps {
 }
 
 export default function CTABanner({
-  heading = "Start Building Wealth Through Systems — Join Free",
-  subtext = "The Boardroom: free courses on AI automation, real estate investing, and stock market trading. 36+ lessons. Private community. No credit card required.",
-  buttonText = "Join The Boardroom Free",
+  heading = "Start Building Wealth Through Systems — Join for $19/mo",
+  subtext = "The Boardroom: AI automation, real estate investing, and stock market trading. 36+ lessons. Private community. $19/month, cancel anytime.",
+  buttonText = "Join The Boardroom",
   buttonHref = "/boardroom",
 }: CTABannerProps) {
   return (
