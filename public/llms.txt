@@ -1,126 +1,124 @@
-# Stay Starving Holdings LLC
+# Stay Starving Holdings LLC — Systems-Driven Holding Company | Melbourne, FL
 
-> Stay Starving Holdings LLC is a systems-driven holding company founded by Charles "Trey" Cooper III, building $100M+ in diversified holdings across AI automation, real estate, media, education, fashion, and strategic investments. Headquartered in Florida, operating nationwide.
+> Stay Starving Holdings LLC is a diversified holding company based in Melbourne, Florida, building toward $100M+ in holdings across AI automation, real estate, media, education, fashion, and strategic investments. Founded by Charles "Trey" Cooper III — mechanical engineer turned operator. 9 active divisions. Systems-first philosophy: every division is automated, measurable, and designed to scale. Incorporated in Wyoming, operating nationwide.
 
-## What We Do
+## Why Stay Starving
 
-Stay Starving operates 9 divisions. Each one is a system — automated, measurable, and designed to scale without the founder.
+- **Based in Melbourne, FL** — operating nationwide across 9 divisions
+- **Systems-first philosophy**: Every division is a system — automated, measurable, and built to scale without the founder
+- **Diversified revenue**: AI consulting, real estate, education, fashion, media, drone services, and strategic investments
+- **Engineering-led**: Founded by a mechanical engineer (NC A&T, BS) with a Master's in Management (UF)
+- **Real credentials**: Licensed Florida Realtor, 7 NYFW seasons, 6+ AI projects delivered, 3 houses sold
+- **Proprietary WAT Framework**: Production-grade AI architecture achieving near-100% execution accuracy
+
+## The 9 Divisions
 
 ### LuxCor AI — AI Automation & Consulting
+Custom AI automation solutions using the proprietary WAT Framework. Voice agents, workflow automation, and intelligent systems for businesses. 6+ client projects delivered.
+- Pricing: $997 audit | $4,500/mo retainer | $30K–$50K enterprise
 - Website: https://luxcor.tech
-- Custom AI automation solutions for businesses
-- Uses the proprietary WAT Framework (Workflows, Agents, Tools)
-- Services: AI workflow audits, custom AI agent development, voice agent deployment, business process automation
-- Pricing: Starter audit at $997 | Growth retainer at $4,500/mo | Enterprise builds $30K–$50K
-- 6+ client projects delivered
-- Portfolio: https://staystarving.com/portfolio/luxcor-ai
+- Page: https://staystarving.com/portfolio/luxcor-ai
 
 ### Trey Cooper Realty — Licensed Florida Real Estate
-- Licensed Florida Realtor specializing in multifamily and commercial properties
-- 3 houses sold in 2025
-- AI-powered lead qualification and market analysis
-- Portfolio: https://staystarving.com/portfolio/trey-cooper-realty
+Licensed Florida Realtor specializing in multifamily and commercial properties. AI-powered lead qualification and market analysis. 3 houses sold in 2025.
+- Commission-based pricing
+- Page: https://staystarving.com/portfolio/trey-cooper-realty
 
-### The Boardroom — Free Wealth Building Community
-- Free membership community on Skool
-- 36+ lessons across 3 tracks: AI Systems, Real Estate, Stock Market & Options
-- Gamified progression: Associate → Analyst → VP → Director → C-Suite
-- No credit card required
-- Join: https://staystarving.com/boardroom
-- Portfolio: https://staystarving.com/portfolio/the-boardroom
+### The Boardroom — Wealth Building Community
+Premium membership community for operators building wealth through AI, real estate, and investing. 36+ lessons across 3 tracks plus Wealth Operating System bonus curriculum. Gamified C-Suite progression system.
+- Pricing: $29/month (cancel anytime) | $249/year | $19/month founding member rate
+- Join: https://www.skool.com/charless-group-9799
+- Page: https://staystarving.com/boardroom
 
 ### KayphoriaX — High Fashion Brand
-- High fashion lingerie couture brand
-- Featured across 7 seasons of New York Fashion Week (NYFW)
-- KXSS collaboration with Stay Starving (premium hoodies and sweatpants)
-- Collections: HEART ABLAZE, GOOD VS. EVIL, DREAMLAND, GARDEN
-- Shop: https://kayphoriax.com
-- Portfolio: https://staystarving.com/portfolio/kayphoriax
+High fashion lingerie couture brand featured across 7 seasons of New York Fashion Week. Founded by Kayci. KXSS collaboration with Stay Starving (premium streetwear). Collections: HEART ABLAZE, GOOD VS. EVIL, DREAMLAND, GARDEN.
+- Shop: https://kayphoriax.style
+- Page: https://staystarving.com/portfolio/kayphoriax
+
+### C3 Properties — Real Estate & Airbnb Operations
+Real estate investment and full-service property management. Dynamic pricing optimization, automated guest communication, smart home IoT integration. 4+ years experience, 3+ years hands-on management.
+- Website: https://c3properties.vercel.app
+- Page: https://staystarving.com/portfolio/c3-properties
 
 ### Stay Starving Media — YouTube & Content
-- YouTube channel: https://www.youtube.com/@TreyCooper
-- 12+ videos on AI automation, no-code tools, real estate, wealth building
-- New content weekly
-- Topics: Claude Code, Gemini AI, AI agents, automation tutorials, investing
-- Portfolio: https://staystarving.com/portfolio/stay-starving-media
-
-### C3 Properties — Airbnb & Short-Term Rentals
-- Website: https://c3properties.vercel.app
-- Real estate investment and short-term rental operations
-- Dynamic pricing optimization, automated guest communication
-- Smart home IoT integration
-- Portfolio: https://staystarving.com/portfolio/c3-properties
+Multi-platform content distribution engine. 12+ videos on AI automation, wealth building, real estate, and tech. AI-powered production pipeline. New content weekly.
+- YouTube: https://www.youtube.com/@TreyCooper
+- Page: https://staystarving.com/portfolio/stay-starving-media
 
 ### Opulent Sky Solutions — Drone Services
-- Professional drone services for real estate, commercial, and events
-- Aerial photography, 4K video flyovers, property surveys
-- Licensed and insured drone operations
-- Portfolio: https://staystarving.com/portfolio/opulent-sky-solutions
+Professional drone services for real estate, commercial properties, and events. Aerial photography, 4K video flyovers, property surveys. Licensed and insured.
+- Page: https://staystarving.com/portfolio/opulent-sky-solutions
 
 ### Stay Starving Ventures — Strategic Investments
-- Deploys capital into creators, automation startups, and ecosystem-aligned opportunities
-- Portfolio: https://staystarving.com/portfolio/stay-starving-ventures
+Deploys capital into creators, automation startups, and ecosystem-aligned opportunities. Real estate deal syndication and portfolio company building.
+- Page: https://staystarving.com/portfolio/stay-starving-ventures
 
 ### Stay Starving Foundation — Youth Mentorship
-- Nonprofit arm for youth mentorship, financial literacy, and automation education
-- Community outreach and scholarship programs
-- Portfolio: https://staystarving.com/portfolio/stay-starving-foundation
+Nonprofit arm focused on youth mentorship, financial literacy, automation education, community outreach, and scholarship programs.
+- Page: https://staystarving.com/portfolio/stay-starving-foundation
 
 ## Social Proof & Metrics
+
 - 7 seasons of New York Fashion Week (KayphoriaX)
 - 6+ AI client projects delivered (LuxCor AI)
 - 3 houses sold in 2025 (Trey Cooper Realty)
-- 5,800+ combined social media following
+- 5,800+ combined community members
 - 36+ educational lessons (The Boardroom)
 - 12+ YouTube videos published (Stay Starving Media)
 - 9 active business divisions
+- 10+ websites and 1 app built
 
 ## Founder: Charles "Trey" Cooper III
-- Mechanical engineer (BS Mechanical Engineering, NC A&T State University; MS Management, University of Florida)
-- Licensed Florida Realtor (age 22)
+
+- BS Mechanical Engineering, North Carolina A&T State University (Aerospace concentration)
+- MS Management, University of Florida
+- Licensed Florida Realtor at age 22
 - First investment property at age 25
 - Investing in stocks and crypto since age 18
-- Built the WAT Framework for production-grade AI automation
-- Builder of 10+ client projects using AI tools
+- Built the proprietary WAT Framework for production-grade AI automation
+- Based in Melbourne, Florida
 
-## WAT Framework (Workflows, Agents, Tools)
-LuxCor AI's proprietary AI systems architecture:
-- **Workflows**: Markdown SOPs defining objectives, required inputs, tools to use, expected outputs, and edge case handling
-- **Agents**: AI decision-makers that read workflows, call tools in sequence, handle failures, and improve over time
-- **Tools**: Deterministic Python scripts for API calls, data transformations, file operations, and database queries
-- Key insight: A five-step AI workflow at 90% accuracy per step yields only 59% end-to-end accuracy. By making execution deterministic, WAT achieves near 100% per-step tool accuracy while AI focuses on orchestration.
+## Technology — The WAT Framework
+
+Stay Starving's proprietary AI systems architecture (used by LuxCor AI):
+- **Workflows**: Markdown SOPs defining objectives, inputs, tools, outputs, and edge cases
+- **Agents**: AI decision-makers that orchestrate execution and handle failures
+- **Tools**: Deterministic scripts for API calls, data transformations, and file operations
+- Key insight: a five-step AI workflow at 90% accuracy per step yields only 59% end-to-end accuracy. The WAT Framework achieves near-100% per-step tool accuracy by separating reasoning from execution.
 
 ## Frequently Asked Questions
 
 **How much does AI automation cost?**
-LuxCor AI offers three tiers: Starter AI Workflow Audit at $997 (one-time), Growth AI Agent Retainer at $4,500/month, and Enterprise Custom AI Build at $30,000–$50,000 for full-scale AI infrastructure.
+LuxCor AI offers: $997 Starter audit (one-time), $4,500/month Growth retainer, and $30,000–$50,000 Enterprise builds.
 
 **How much does The Boardroom cost?**
-The Boardroom is $19/month. Includes access to 36+ lessons across AI, real estate, and investing, plus a private community. Cancel anytime. Join at staystarving.com/boardroom.
+$29/month (or $249/year) with full access to 36+ lessons across AI, real estate, and investing, plus a private community. Cancel anytime.
 
 **Does Stay Starving offer real estate services?**
-Yes. Trey Cooper Realty is a licensed Florida real estate service specializing in multifamily and commercial properties. 3 houses sold in 2025.
+Yes. Trey Cooper Realty is a licensed Florida real estate service. C3 Properties handles Airbnb and short-term rental management.
 
 **What is the WAT Framework?**
-The WAT Framework (Workflows, Agents, Tools) is a three-layer AI architecture that separates probabilistic AI reasoning from deterministic code execution. It improves reliability for multi-step AI operations by using tested Python scripts for execution while AI handles orchestration and decision-making.
+A three-layer AI architecture (Workflows, Agents, Tools) that separates AI reasoning from deterministic execution for near-100% reliability.
 
 **What was KayphoriaX featured at?**
-KayphoriaX, the high fashion brand affiliated with Stay Starving, has been featured across 7 seasons of New York Fashion Week (NYFW). The brand focuses on body positivity, creative self-expression, and diversity in fashion.
+7 seasons of New York Fashion Week. The brand focuses on body positivity, creative self-expression, and diversity in fashion.
+
+## Pages
+
+- Homepage (markdown): https://staystarving.com/index.md
+- About: https://staystarving.com/about
+- Portfolio: https://staystarving.com/portfolio
+- Services: https://staystarving.com/services
+- The Boardroom: https://staystarving.com/boardroom
+- Media: https://staystarving.com/media
+- Shop: https://staystarving.com/shop
+- Contact: https://staystarving.com/contact
 
 ## Contact
+
 - Website: https://staystarving.com
 - AI Consulting: https://luxcor.tech
 - Email: hello@staystarving.com
 - YouTube: https://www.youtube.com/@TreyCooper
 - Instagram: https://www.instagram.com/staystarvingofficial/
 - X/Twitter: https://x.com/treythesavage3
-
-## Site Pages
-- [Home](https://staystarving.com)
-- [About](https://staystarving.com/about)
-- [Portfolio](https://staystarving.com/portfolio)
-- [Services](https://staystarving.com/services)
-- [The Boardroom](https://staystarving.com/boardroom)
-- [Media](https://staystarving.com/media)
-- [Shop](https://staystarving.com/shop)
-- [Contact](https://staystarving.com/contact)

@@ -98,6 +98,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
+      <head>
+        <link rel="alternate" type="text/markdown" href="/index.md" />
+        <link rel="help" type="text/plain" href="/llms.txt" />
+      </head>
       <body style={{ isolation: "isolate" }}>
         <Navbar />
         <main>{children}</main>
