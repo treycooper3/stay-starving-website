@@ -70,7 +70,7 @@ export async function POST(request: NextRequest) {
     // Send email notification via Resend
     if (resend) {
       await resend.emails.send({
-        from: "Stay Starving <onboarding@resend.dev>",
+        from: "Stay Starving <hello@staystarving.com>",
         to: [NOTIFICATION_EMAIL],
         subject: `New Contact: ${safeInquiry} from ${safeName}`,
         html: `
