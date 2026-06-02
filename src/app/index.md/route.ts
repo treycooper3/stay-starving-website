@@ -89,7 +89,7 @@ Real estate investment and full-service property management. Dynamic pricing opt
 ### Stay Starving Media — YouTube & Content
 Multi-platform content distribution engine. 12+ videos on AI automation, wealth building, real estate, and tech. AI-powered production pipeline. New content weekly.
 
-- **YouTube**: [https://www.youtube.com/@TreyCooper](https://www.youtube.com/@TreyCooper)
+- **YouTube**: [https://www.youtube.com/@TreyCooper.](https://www.youtube.com/@TreyCooper.)
 - **Topics**: Claude Code, Gemini AI, AI agents, automation tutorials, wealth building, real estate investing
 
 [View Division Details →](https://staystarving.com/portfolio/stay-starving-media)
@@ -247,7 +247,7 @@ Premium streetwear collaboration. Limited edition drops.
 - **Website**: [https://staystarving.com](https://staystarving.com)
 - **Email**: hello@staystarving.com
 - **AI Consulting**: [https://luxcor.tech](https://luxcor.tech)
-- **YouTube**: [https://www.youtube.com/@TreyCooper](https://www.youtube.com/@TreyCooper)
+- **YouTube**: [https://www.youtube.com/@TreyCooper.](https://www.youtube.com/@TreyCooper.)
 - **Instagram**: [https://www.instagram.com/staystarvingofficial/](https://www.instagram.com/staystarvingofficial/)
 - **X/Twitter**: [@treythesavage3](https://x.com/treythesavage3)
 - **Discord**: [https://discord.gg/684VAZaZ](https://discord.gg/684VAZaZ)

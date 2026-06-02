@@ -246,7 +246,7 @@ export default function MediaContent() {
           <FadeInOnScroll>
             <div className="text-center mt-12">
               <a
-                href="https://www.youtube.com/@TreyCooper"
+                href="https://www.youtube.com/@TreyCooper."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 border border-gold text-gold rounded hover:bg-gold hover:text-black transition-colors font-semibold text-sm"
