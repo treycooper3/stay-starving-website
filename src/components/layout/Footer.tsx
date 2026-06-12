@@ -34,7 +34,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-gold/[0.06] bg-surface">
       <Container className="py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-3 mb-4">
@@ -127,7 +127,7 @@ export default function Footer() {
                 <span className="font-serif italic">You&apos;re subscribed.</span>
               </div>
             ) : (
-              <form className="flex gap-2" onSubmit={handleNewsletterSubmit}>
+              <form className="flex flex-col sm:flex-row gap-2" onSubmit={handleNewsletterSubmit}>
                 <input
                   name="email"
                   type="email"

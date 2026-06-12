@@ -1,7 +1,7 @@
 "use client";
 
-import { useRef, useEffect } from "react";
-import { motion } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
 
 function gaussianRandom(): number {
   const u1 = Math.random();
@@ -11,8 +11,17 @@ function gaussianRandom(): number {
 
 export default function SSParticleBackground({ className }: { className?: string }) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    // Respect reduced-motion — the static hero background carries the page.
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    // Lighter config on phones: fewer particles/lines, no bloom pass.
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
     let disposed = false;
     let animationFrameId: number;
 
@@ -57,7 +66,7 @@ export default function SSParticleBackground({ className }: { className?: string
       container.appendChild(renderer.domElement);
 
       // Generate SS formation
-      const positions = generateSSFormation(THREE);
+      const positions = generateSSFormation(THREE, isMobile);
       const particleCount = positions.length / 3;
 
       // Particle sizes — larger for more presence
@@ -149,7 +158,7 @@ export default function SSParticleBackground({ className }: { className?: string
       scene.add(particles);
 
       // Connection lines
-      const linePositions = generateConnections(positions, 3.5);
+      const linePositions = generateConnections(positions, 3.5, isMobile);
       const lineGeometry = new THREE.BufferGeometry();
       lineGeometry.setAttribute(
         "position",
@@ -182,20 +191,24 @@ export default function SSParticleBackground({ className }: { className?: string
       const lines = new THREE.LineSegments(lineGeometry, lineMaterial);
       scene.add(lines);
 
-      // Post-processing
+      // Post-processing — bloom is the most expensive pass; skip it on mobile.
       const composer = new EffectComposer(renderer);
       composer.addPass(new RenderPass(scene, camera));
-      const bloomPass = new UnrealBloomPass(
-        new THREE.Vector2(width, height),
-        1.8,
-        0.5,
-        0.15
-      );
-      composer.addPass(bloomPass);
+      let bloomPass: InstanceType<typeof UnrealBloomPass> | null = null;
+      if (!isMobile) {
+        bloomPass = new UnrealBloomPass(
+          new THREE.Vector2(width, height),
+          1.8,
+          0.5,
+          0.15
+        );
+        composer.addPass(bloomPass);
+      }
       composer.addPass(new OutputPass());
 
       // Animation
       const clock = new THREE.Clock();
+      let firstFrame = true;
 
       function animate() {
         if (disposed) return;
@@ -215,6 +228,12 @@ export default function SSParticleBackground({ className }: { className?: string
         lines.rotation.z = Math.cos(elapsed * 0.15) * 0.04;
 
         composer.render();
+
+        // Fade the canvas in only after its first frame is actually on screen.
+        if (firstFrame) {
+          firstFrame = false;
+          setReady(true);
+        }
       }
 
       animate();
@@ -229,7 +248,7 @@ export default function SSParticleBackground({ className }: { className?: string
         camera.updateProjectionMatrix();
         renderer.setSize(newWidth, newHeight);
         composer.setSize(newWidth, newHeight);
-        bloomPass.resolution.set(newWidth, newHeight);
+        bloomPass?.resolution.set(newWidth, newHeight);
       }
 
       window.addEventListener("resize", handleResize);
@@ -249,25 +268,39 @@ export default function SSParticleBackground({ className }: { className?: string
       };
     }
 
+    // Defer the heavy three.js init until after first paint so it never
+    // competes with the initial render/hydration of the hero text.
     let cleanup: (() => void) | undefined;
-    init().then((fn) => {
-      cleanup = fn;
-    });
+    const runInit = () => {
+      init().then((fn) => {
+        cleanup = fn;
+      });
+    };
+    const hasIdle = typeof window.requestIdleCallback === "function";
+    const idleHandle = hasIdle
+      ? window.requestIdleCallback(runInit, { timeout: 1500 })
+      : window.setTimeout(runInit, 200);
 
     return () => {
       disposed = true;
+      if (hasIdle) {
+        window.cancelIdleCallback(idleHandle);
+      } else {
+        window.clearTimeout(idleHandle);
+      }
       cancelAnimationFrame(animationFrameId);
       cleanup?.();
     };
   }, []);
 
   return (
-    <motion.div
+    <div
       ref={containerRef}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
-      className={className ?? "absolute inset-0 z-0 pointer-events-none"}
+      className={cn(
+        "hero-particles",
+        ready && "hero-particles--visible",
+        className ?? "absolute inset-0 z-0 pointer-events-none"
+      )}
       style={{ mixBlendMode: "screen" }}
       aria-hidden="true"
     />
@@ -275,12 +308,13 @@ export default function SSParticleBackground({ className }: { className?: string
 }
 
 function generateSSFormation(
-  THREE: typeof import("three")
+  THREE: typeof import("three"),
+  isMobile = false
 ): Float32Array {
   const allPositions: number[] = [];
   const scatterRadius = 1.0;
-  const samplesPerCurve = 300;
-  const particlesPerSample = 4;
+  const samplesPerCurve = isMobile ? 150 : 300;
+  const particlesPerSample = isMobile ? 2 : 4;
 
   // First S — left side (scaled to fill viewport, centered at origin)
   const scale = 2.0;
@@ -341,7 +375,7 @@ function generateSSFormation(
   }
 
   // Dense neural network cluster in the CENTER between the two S's
-  const clusterCount = 400;
+  const clusterCount = isMobile ? 200 : 400;
   const clusterSpreadX = 4.0;
   const clusterSpreadY = 6.0;
   const clusterSpreadZ = 3.0;
@@ -358,11 +392,12 @@ function generateSSFormation(
 
 function generateConnections(
   positions: Float32Array,
-  maxDistance: number
+  maxDistance: number,
+  isMobile = false
 ): Float32Array {
   const linePositions: number[] = [];
   const particleCount = positions.length / 3;
-  const maxConnections = 3500;
+  const maxConnections = isMobile ? 1500 : 3500;
   let connectionCount = 0;
   const maxDistSq = maxDistance * maxDistance;
 

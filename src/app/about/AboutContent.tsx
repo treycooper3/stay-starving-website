@@ -86,6 +86,7 @@ export default function AboutContent() {
                   alt="Charles Trey Cooper III — Founder of Stay Starving Holdings, AI Engineer and Licensed Florida Realtor"
                   width={600}
                   height={800}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
                   className="w-full h-auto"
                 />
               </div>

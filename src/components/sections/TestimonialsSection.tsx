@@ -50,7 +50,7 @@ export default function TestimonialsSection() {
         </FadeInOnScroll>
 
         {/* Proof Points */}
-        <StaggerChildren className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
+        <StaggerChildren className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-20">
           {PROOF_POINTS.map((point) => (
             <StaggerItem key={point.label}>
               <div className="text-center p-6 rounded-lg border border-border bg-surface-elevated">
@@ -67,7 +67,7 @@ export default function TestimonialsSection() {
         </StaggerChildren>
 
         {/* Testimonial Cards */}
-        <StaggerChildren className="grid sm:grid-cols-3 gap-6">
+        <StaggerChildren className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
           {TESTIMONIALS.map((testimonial) => (
             <StaggerItem key={testimonial.context}>
               <div className="h-full flex flex-col p-6 rounded-lg border border-border bg-surface-elevated">

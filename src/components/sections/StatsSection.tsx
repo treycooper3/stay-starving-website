@@ -11,7 +11,7 @@ export default function StatsSection() {
       <div className="absolute top-0 left-0 right-0 divider-gold-thin" />
       <div className="absolute bottom-0 left-0 right-0 divider-gold-thin" />
       <Container>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 md:gap-12">
           {STATS.map((stat, index) => (
             <FadeInOnScroll key={stat.label} delay={index * 0.1}>
               <div className="text-center">

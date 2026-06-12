@@ -92,3 +92,71 @@ body {
   0% { background-position: -200% center; }
   100% { background-position: 200% center; }
 }
+
+/* ===== Hero CSS-first entrance animations =====
+   These run from server-delivered HTML the instant CSS parses — no JS/hydration
+   gate — so the hero content paints immediately instead of a blank black screen. */
+@keyframes hero-slide-reveal {
+  from { opacity: 0; transform: translateY(110%); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hero-fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hero-divider {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+@keyframes hero-glow-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.hero-anim-headline {
+  display: inline-block;
+  animation: hero-slide-reveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.hero-anim-headline--delay-1 { animation-delay: 0s; }
+.hero-anim-headline--delay-2 { animation-delay: 0.1s; }
+
+.hero-anim-divider {
+  transform-origin: center;
+  animation: hero-divider 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+}
+
+.hero-anim-subhead { animation: hero-fade-up 0.5s ease-out 0.25s both; }
+.hero-anim-descriptor { animation: hero-fade-up 0.5s ease-out 0.3s both; }
+.hero-anim-ctas { animation: hero-fade-up 0.5s ease-out 0.35s both; }
+.hero-anim-glow { animation: hero-glow-in 2.5s ease-out both; }
+
+/* Particle canvas fades in via CSS once its first frame has rendered */
+.hero-particles {
+  opacity: 0;
+  transition: opacity 1.6s ease-out;
+}
+.hero-particles--visible { opacity: 1; }
+
+/* Static designed hero glow — carries the hero before/without the 3D canvas */
+.hero-radial-glow {
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 45%, rgba(59, 130, 246, 0.06), transparent 70%),
+    radial-gradient(ellipse 40% 30% at 50% 50%, rgba(212, 168, 67, 0.04), transparent 70%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-anim-headline,
+  .hero-anim-divider,
+  .hero-anim-subhead,
+  .hero-anim-descriptor,
+  .hero-anim-ctas,
+  .hero-anim-glow {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .hero-particles { transition: none; }
+}
