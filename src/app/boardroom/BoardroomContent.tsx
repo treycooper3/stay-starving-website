@@ -41,7 +41,7 @@ export default function BoardroomContent() {
         <Container className="relative z-10 text-center max-w-4xl">
           <FadeInOnScroll>
             <Badge variant="gold" className="mb-6">
-              <Crown size={12} className="mr-1" /> $19 / mo
+              <Crown size={12} className="mr-1" /> Free to Join
             </Badge>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
               The Boardroom
