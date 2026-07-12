@@ -21,8 +21,19 @@ const organizationSchema = {
     height: 512,
   },
   description:
-    "Stay Starving Holdings LLC operates 9 divisions across AI automation (LuxCor AI — starting at $997), real estate (Trey Cooper Realty — 3 houses sold in 2025), education (The Boardroom — $19/mo, 36+ lessons), fashion (KayphoriaX — 7 NYFW seasons), media (Stay Starving Media — 12+ videos), drone services (Opulent Sky Solutions), and strategic investments. Founded by Charles 'Trey' Cooper III, licensed Florida Realtor and AI systems architect.",
+    "Stay Starving Holdings LLC operates 9 divisions across AI automation (LuxCor AI — starting at $997), real estate (Trey Cooper Realty — 3 houses sold in 2025), education (The Boardroom — free to join, 36+ lessons), fashion (KayphoriaX — 7 NYFW seasons), media (Stay Starving Media — 12+ videos), drone services (Opulent Sky Solutions), and strategic investments. Founded by Charles 'Trey' Cooper III, licensed Florida Realtor and AI systems architect.",
   foundingDate: "2023",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Melbourne",
+    addressRegion: "FL",
+    addressCountry: "US",
+  },
+  areaServed: [
+    { "@type": "City", name: "Melbourne, FL" },
+    { "@type": "AdministrativeArea", name: "Brevard County, FL" },
+    { "@type": "Country", name: "United States" },
+  ],
   founder: {
     "@type": "Person",
     name: "Charles Cooper III",
@@ -67,9 +78,9 @@ const organizationSchema = {
           "@type": "Service",
           name: "The Boardroom — Wealth Building Community",
           description:
-            "Membership community with 36+ lessons across AI, real estate, and investing tracks. $19/month, cancel anytime.",
+            "Free community with 36+ lessons across AI, real estate, and investing tracks. Free to join; Premium unlocks the deep build content.",
         },
-        price: "19",
+        price: "0",
         priceCurrency: "USD",
       },
     ],
@@ -181,7 +192,7 @@ const faqSchema = {
       name: "How much does The Boardroom cost?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The Boardroom is $19/month. You get access to 36+ lessons across three tracks: AI Systems, Real Estate, and Stock Market & Options. Members progress through gamified ranks from Associate to C-Suite based on engagement and results. Cancel anytime. Join at staystarving.com/boardroom.",
+        text: "The Boardroom is free to join. You get the community plus Module 1 of all three tracks (AI Systems, Real Estate, and Stock Market & Options) and the free resources. Premium unlocks the deep, build-alongside content. Members progress through gamified ranks from Associate to C-Suite based on engagement and results. Join free at staystarving.com/boardroom.",
       },
     },
     {

@@ -13,8 +13,8 @@ interface CTABannerProps {
 }
 
 export default function CTABanner({
-  heading = "Start Building Wealth Through Systems — Join for $19/mo",
-  subtext = "The Boardroom: AI automation, real estate investing, and stock market trading. 36+ lessons. Private community. $19/month, cancel anytime.",
+  heading = "Start Building Wealth Through Systems — Join Free",
+  subtext = "The Boardroom: AI automation, real estate investing, and stock market trading. 36+ lessons. Free to join; Premium unlocks the deep build content.",
   buttonText = "Join The Boardroom",
   buttonHref = "/boardroom",
 }: CTABannerProps) {

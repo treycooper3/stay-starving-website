@@ -255,10 +255,10 @@ export const GAMIFICATION_LEVELS = [
   { level: 6, name: "C-Suite", points: 1000, unlock: "Inner circle.direct access to Trey" },
 ] as const;
 
+// Freemium model: free to join, Premium unlocks deep content. See Skool/skool/freemium-model.md
 export const MEMBERSHIP_PRICING = {
-  monthly: { price: 29, interval: "month" as const, label: "$29/month" },
-  annual: { price: 249, interval: "year" as const, label: "$249/year", savings: 99 },
-  founding: { price: 19, interval: "month" as const, label: "$19/month", note: "First 20 members.locked in for life" },
+  free: { price: 0, interval: "month" as const, label: "Free" },
+  premium: { price: 19, interval: "month" as const, label: "$19/month", note: "Unlocks Modules 2–3 + deep Wealth OS" },
 } as const;
 
 export const STATS = [

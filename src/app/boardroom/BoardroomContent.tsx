@@ -222,28 +222,29 @@ export default function BoardroomContent() {
                 Pricing
               </p>
               <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-                $19 / Month
+                Free to Join
               </h2>
               <p className="text-text-secondary max-w-xl mx-auto">
-                The Boardroom is $19/month. All three course tracks,
-                the private community, and gamified progression — cancel anytime.
+                The Boardroom is free to join. Get the community, Start Here, free
+                resources, and Module 1 of every track. Upgrade to Premium when you
+                want the deep, build-alongside content.
               </p>
             </div>
           </FadeInOnScroll>
 
           <FadeInOnScroll delay={0.1}>
             <div className="rounded-lg border border-gold/30 bg-gold/5 p-8 text-center">
-              <p className="text-5xl font-bold text-gold mb-2">$19</p>
-              <p className="text-text-secondary mb-2">per month</p>
+              <p className="text-5xl font-bold text-gold mb-2">Free</p>
+              <p className="text-text-secondary mb-2">to join</p>
               <p className="text-xs text-text-muted mb-6">
-                36+ lessons across 3 tracks, private community, gamified
-                progression
+                Community, Start Here, free resources, and Module 1 of every track.
+                Premium unlocks the deep build content.
               </p>
               <Button href={SKOOL_URL} size="lg">
-                Join Now
+                Join Free
               </Button>
               <p className="text-xs text-text-muted mt-4">
-                Cancel anytime. No long-term commitment.
+                No card required. Upgrade to Premium anytime.
               </p>
             </div>
           </FadeInOnScroll>

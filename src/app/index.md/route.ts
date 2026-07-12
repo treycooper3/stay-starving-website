@@ -47,9 +47,9 @@ Licensed Florida Realtor specializing in multifamily and commercial real estate.
 ---
 
 ### The Boardroom — Wealth Building Community
-Premium membership community for operators building wealth through AI, real estate, and investing. 36+ lessons across 3 tracks plus Wealth Operating System bonus curriculum.
+Free community for operators building wealth through AI, real estate, and investing. 36+ lessons across 3 tracks plus Wealth Operating System bonus curriculum.
 
-- **Pricing**: $29/month (cancel anytime) | $249/year | $19/month founding member rate
+- **Pricing**: Free to join | Premium ($19/month) unlocks Modules 2–3 + deep Wealth OS
 - **Join**: [https://www.skool.com/charless-group-9799](https://www.skool.com/charless-group-9799)
 
 **3 Course Tracks:**
