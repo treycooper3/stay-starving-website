@@ -2,7 +2,6 @@
 
 import Button from "@/components/ui/Button";
 import Container from "@/components/layout/Container";
-import SSParticleBackground from "@/components/animations/SSParticleBackground";
 
 export default function HeroSection() {
   return (
@@ -12,8 +11,19 @@ export default function HeroSection() {
       <div className="absolute inset-0 hero-grid opacity-60" />
       <div className="absolute inset-0 hero-radial-glow" />
 
-      {/* SS Neural Network — full-screen background, deferred mount, blends seamlessly */}
-      <SSParticleBackground />
+      {/* SS Neural Network — pre-rendered plate of the three.js formation.
+          The live WebGL version cost ~5fps desktop / 16fps mobile and a 1.9s
+          main-thread freeze; this is the same visual at zero runtime cost.
+          Captured on black and composited with `screen`, so black drops out. */}
+      <img
+        src="/ss-hero-plate.webp"
+        alt=""
+        aria-hidden="true"
+        decoding="async"
+        fetchPriority="low"
+        className="pointer-events-none absolute inset-0 z-0 h-full w-full object-cover object-center"
+        style={{ mixBlendMode: "screen" }}
+      />
 
       {/* Subtle ambient glow behind the network */}
       <div className="hero-anim-glow absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140vw] h-[60vh] sm:w-[900px] sm:h-[600px] bg-blue-500/[0.03] rounded-full blur-[200px]" />
@@ -25,11 +35,6 @@ export default function HeroSection() {
           <span className="block overflow-hidden pb-[0.15em]">
             <span className="hero-anim-headline hero-anim-headline--delay-1">
               Stay Starving
-            </span>
-          </span>
-          <span className="block mt-2 text-4xl sm:text-5xl md:text-6xl lg:text-7xl overflow-hidden pb-[0.15em]">
-            <span className="hero-anim-headline hero-anim-headline--delay-2 text-gradient-gold">
-              Holdings
             </span>
           </span>
         </h1>
